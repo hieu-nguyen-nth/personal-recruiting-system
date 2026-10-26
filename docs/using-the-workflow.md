@@ -6,9 +6,9 @@ This is an organizational recommendation. Chats keep their own transcripts: a ne
 
 ## Tailor a resume
 
-Start a new chat in your existing recruiting project and supply the specific job-page link or JD. Use the installed coordinator, or give the chat the private Notion coordinator link from your own setup note:
+Start a new chat in your existing recruiting project and supply the specific job-page link or JD. Use your configured coordinator, or load this kit's generic sample with your private setup note. See the [skill catalog](skills.md) and [artifact guide](supporting-artifacts.md):
 
-> Use recruiting-coordinator for this role: [my job page or JD]. Read the job, company research, my current approved evidence and existing tailoring method. Propose the strongest positioning and show exact original/proposed changes with sources, including Additional skills. Run independent content QA against the draft, JD and original evidence. Save progress on the job page and stop for my review. Do not edit Google documents, export a PDF, send messages or apply.
+> Use recruiting-coordinator for this role: [my job page or JD]. Read the job, company research, my current approved evidence and existing tailoring method. Propose the strongest positioning and show exact original/proposed changes with sources, including supported additional skills. Run independent content QA against the draft, JD and original evidence. Save progress on the job page and stop for my review. Do not edit Google documents, export a PDF, send messages or apply.
 
 No new plugin is needed to organize this request. The skills define the methods; existing service connections provide tool access. Document-generation capabilities can be connected when you choose to use them. Keep candidate material and the completed private setup note outside the generic sharing repository.
 
@@ -21,7 +21,7 @@ No new plugin is needed to organize this request. The skills define the methods;
 | Research this company, basic/deep | Company name/page and chosen depth | Company brief, dated insights and decision-changing questions |
 | Save this insight | Finding and source | Dated update on the existing company page |
 | Find people / refresh this contact | Company/person and your connection preferences | Sourced identity/connection evidence, uncertainties and suggested next step |
-| Log this conversation | Actual notes and person | Linked dated interaction and agreed follow-up |
+| Log this conversation | Actual notes and person | Dated toggle on the existing People page and current follow-up properties |
 | Resume from the saved step | Job page | The next unfinished preparation step, respecting the requested stopping point |
 
 Review/approval is part of using the resume workflow, not permission to submit. A proposal is not a final resume. Content QA does not prove document layout, PDF parsing or an employer ATS result. Update the evidence snapshots if the canonical source changes, and recheck affected text after revisions.

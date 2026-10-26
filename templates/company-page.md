@@ -10,7 +10,7 @@ For each finding: observation date; source URL and publication date when availab
 What work needs doing? What evidence would demonstrate capability? Which criteria are official, inferred or unknown? Link relevant jobs rather than duplicating their entire JDs.
 
 ## People and questions
-Link People records. Record a suitable question and shared-background evidence when relevant. Conversation notes belong in linked interaction records.
+Link People records. Record a suitable question and shared-background evidence when relevant. Conversation notes belong under dated toggles inside each person's People page.
 
 ## Next actions
 Decision-changing questions, next step and any user-agreed date. Priority and research depth remain user choices.

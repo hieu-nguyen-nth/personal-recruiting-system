@@ -6,10 +6,11 @@ Do not commit the completed version. Store credentials only in the provider's su
 |---|---|
 | Jobs destination and field mapping | Your database/data source and active statuses |
 | Companies destination | Your database/data source |
-| People and interaction destinations | Your existing trackers and relation mapping |
+| People destination | Existing People tracker, company relations and dated conversation-toggle format |
 | Job search scope | Role, location, timing and constraints you choose |
+| Private playbook | Goals, industry/function preferences and evaluation decisions; keep personal targeting rules private |
 | Evaluation / tailoring / QA | Current method locations and reference dates |
-| Candidate evidence | Authoritative private resume, story/bullet bank, skills and unresolved corrections |
+| Candidate evidence | Canonical locations/version dates for master resume, story/bullet bank, skills inventory and corrections; see the artifact guide |
 | Networking preferences | Your connection preferences and acceptable evidence |
 | Documents | Original template, output location and tested connector capabilities |
 | Scheduler | Selected local/cloud runtime; actual task ID/link, cadence, time zone and observed next run; distinguish created from executed |

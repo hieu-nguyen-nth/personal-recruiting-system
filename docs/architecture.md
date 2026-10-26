@@ -1,45 +1,32 @@
 # Component architecture
 
-This is a tool-connected workflow with persisted work in existing records. The coordinator is a reusable instruction set executed by the assistant, not a continuously running server.
+The coordinator is an instruction set executed by the assistant. It loads the method needed for the request and uses connected tools; it is not a continuously running server. The reusable repository contains no live account configuration.
 
-```mermaid
-flowchart TB
-  subgraph Inputs
-    U[Human request / stop point]
-    S[Local or cloud scheduled task]
-    J[Job-source connector]
-    W[Public web research]
-  end
-  U --> C
-  S --> C
-  J --> C
-  W --> C
-  subgraph Agent[Assistant execution]
-    C[Coordinator]
-    E[Existing evaluation method]
-    T[Existing tailoring method]
-    Q[Independent QA method]
-    C --> E
-    C --> T
-    T --> Q
-  end
-  P[Private evidence and user corrections] --> E
-  P --> T
-  P --> Q
-  C <--> N[(Notion records and page notes)]
-  T --> D[Document copy / edit / PDF export]
-  D --> Q
-  Q --> H[Human review / outreach / submission]
-  H --> N
-```
+| Component | Reads | Produces / owns |
+|---|---|---|
+| Request or scheduler | Specific record/request, cadence and scope from private setup | Starts one bounded execution in the chosen runtime |
+| Coordinator | Current record, source material, private setup and selected skill | Chooses the next step; records completion or the precise blocker |
+| Job-source connector | Search constraints or exact provider ID | Full JD, source URL and provider availability; not a guarantee of live employer status |
+| Research tools | Public company/professional sources and prior notes | Dated facts, citations, labeled inference and unknowns |
+| Evaluation / tailoring / QA skills | JD, company context and the relevant private artifacts | Assessment, evidence-backed proposals and a separate review; see [skill catalog](skills.md) |
+| Notion | Existing schemas, records, relations and page bodies | Three linked databases, source-backed assessments, research, conversation toggles and saved next steps |
+| Optional document tools | Approved text and a copied template | Editable resume and exact exported file, separately checked for layout |
+| Human | Recommendations, proposed changes and QA findings | Priorities, factual corrections, final approval, outreach and submission |
 
-| Boundary | Contract |
-|---|---|
-| Discovery → Jobs | Specific opening identity, canonical URL/provider ID, JD and source date; deduplicate before creation. |
-| Evaluation → job page | Evidence-based decision, unknowns, sources, review state and next action; preserve application state. |
-| Research → company page | Dated finding, source and recruiting implication; company may precede an opening. |
-| Networking → People / Interactions | Verified identity and current facts on People; dated conversation and follow-up in Interactions. |
-| Tailoring → document | Supported changes traceable to private evidence; original template preserved. |
-| QA → human | Independent claim/coverage checks and actual-file inspection status; unresolved factual issues remain explicit. |
+## Execution and handoffs
 
-The job page is the resume point: last completed step, next step, requested stopping point and exact current artifact. The scheduler owns timing/history; a private setup note owns destination/method links and the latest report. Avoid simultaneous interactive and scheduled edits to the same record. No separate orchestration database is required for this single-user workflow.
+A discovered role is matched to Jobs by canonical employer/requisition before creation. A second role at the same company gets a different Jobs row linked to the existing company. Each new discovery receives a quick scope screen; viable/unclear roles use the selected evaluation method. The scan reports work left unfinished rather than marking the whole market reviewed.
+
+Company research is reused across roles. Basic research establishes products, customers, direction and useful questions. Deep research connects recent primary-source evidence to team criteria, candidate positioning and unresolved decisions. User priority controls extra effort; an agent's fit assessment does not set it automatically.
+
+People holds current contact facts and actionable follow-up. A person's page holds all conversation history under dated toggles. Refreshing a role or adding a conversation preserves earlier toggles, user notes and relationship stage. See the single [schema](database-schema.md) for relations and field ownership.
+
+Tailoring proposes supported changes using the current evidence. QA independently checks the actual draft against the JD and raw evidence. User edits invalidate checks on affected text. Text QA can finish without document export; final-file claims require checking that exact file.
+
+The job page is the continuation point: last completed step, next step, requested stopping point, exact current draft and open questions. The scheduler owns timing/history; a private setup note holds bindings and the linked digest. Avoid concurrent edits to the same record; no queue or locking service is needed for this personal workflow.
+
+## Completion boundaries
+
+A configured schedule is not an observed run. Record the actual scheduled trigger, tool results and verified Notion writeback; test the recurring task separately. This can prove local integration without proving laptop-closed operation. See [scheduling](scheduling.md). Store actual IDs, timestamps, test employers and results privately; the shared kit documents how to repeat the checks.
+
+A tool failure leaves its dependent step incomplete. A stored JD read is not a fresh employer-site check. A contact match is not a referral. A draft is not a sent message or submitted application. These distinctions make the system resumable without inventing progress.

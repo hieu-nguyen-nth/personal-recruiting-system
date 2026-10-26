@@ -1,66 +1,45 @@
 # Personal Recruiting System
 
-A small, agent-assisted workflow for discovering opportunities, researching companies, managing professional relationships, and preparing evidence-based applications. It connects existing tools rather than introducing a custom website or backend.
+A practical kit for running a personal recruiting workflow with an assistant, Notion and a connected job source. It supports job evaluation, company research, networking, resume tailoring and independent quality review. Use existing tools; no website or backend is required.
 
-This repository contains reusable instructions, prompts, a Notion schema, and diagrams. It contains no candidate profile, resume, personal recruiting strategy, live tracker export, contact list, credentials, or account configuration. Installing these files alone does not connect services or create a schedule.
+The repository contains generic sample skills, templates and fictional examples. Your resume, evidence banks, contacts, targeting strategy, tracker links and account configuration stay in your private workspace. Cloning this repository does not install skills, connect tools or create schedules.
 
-## How the system works
-
-![Simple recruiting workflow](docs/system.svg)
+## How it works
 
 ```mermaid
 flowchart LR
-    A[You ask] --> C[Agent coordinator]
-    B[Local or cloud schedule] --> C
+    A[Your request or scheduled scan] --> C[Agent coordinator]
     S[Job source and public research] --> C
-    C <--> N[Notion: jobs, companies, people, interactions]
-    P[Private evidence and existing skills] --> C
-    C --> D[Google Docs: draft and PDF]
-    D --> Q[Independent QA]
-    Q --> H[You revise, approve, contact and apply]
+    E[Private evidence and skill methods] --> C
+    C <--> N[Notion: Jobs, Companies, People]
+    C --> D[Resume proposals and independent QA]
+    D --> H[You review and act]
     H --> N
 ```
 
-The agent selects the appropriate existing method: evaluate a role, research a company, find or refresh contacts, tailor a resume, or independently review it. You can stop after any step. Your original evidence remains the authority for claims; an agent recommendation does not change your application status or company priorities.
+There are three linked databases. One company can have many jobs; each identified job belongs to one company. Company research lives on company pages. Every contact has one People page, with separate dated toggles for conversations. Resume proposals can remain text; document editing and PDF export are an optional later step.
 
-## Design decisions
+| Tool / person | Responsibility |
+|---|---|
+| Notion | Jobs, company research, contacts, conversation toggles and next actions |
+| Agent + skills | Evaluate work and fit, research with sources, propose edits and check evidence |
+| Trackly or another connected job source | Discover openings and retrieve JDs |
+| Scheduler | Run a bounded scan in the selected runtime; local Codex requires an awake computer with the app running |
+| Private files / optional document editor | Authoritative candidate evidence, resume versions and approved exports |
+| You | Set priorities, correct evidence, review drafts, contact people and apply |
 
-| Component | Job | Why it belongs here |
-|---|---|---|
-| Notion | Structured jobs, company pages, people, interaction history and next actions | Relations connect records without copying the same information into several trackers. |
-| Google Docs / Drive | Editable application documents and exported PDFs | Document editing and final layout inspection are different work from tracking. |
-| Agent coordinator | Route requests through existing evaluation, tailoring and QA methods | Reuses specialized methods while keeping one entry point. |
-| Trackly or another connected job source | Discover roles and retrieve JDs | Source access is checked in the environment that will actually run the work. |
-| A scheduler in the chosen runtime | Repeat a proven discovery/evaluation workflow | Local Codex needs an awake computer and running app; cloud execution is needed while the computer is off. |
-| You | Priorities, corrections, final approval, networking messages and submission | These decisions remain explicit and reviewable. |
+## Start here
 
-Company insights live as dated, sourced sections on company pages. Reuse an existing interaction table if available. There is no separate insights database, queue service, runs database, custom application, or deployment requirement.
+1. **Understand the model:** read the [architecture](docs/architecture.md) and the single [database schema](docs/database-schema.md).
+2. **Prepare private evidence:** use the [supporting-artifact guide](docs/supporting-artifacts.md). Keep your completed files outside this repository.
+3. **Choose methods:** review the [skill catalog](docs/skills.md). Use your existing methods or adapt the clearly labeled samples; keep personal criteria private.
+4. **Build the workspace:** give an assistant the [build prompt](prompts/build-your-workspace.md) and a privately completed [setup note](templates/private-setup.md). Inspect/reuse existing trackers, preserve assignments and notes, then verify relations.
+5. **Try a small workflow:** follow the [fictional worked example](docs/worked-example.md) and [request guide](docs/using-the-workflow.md). Evaluate a job, save a company finding, log a real conversation in a person's page, then prepare text and run separate QA.
+6. **Create the actual schedule:** follow [scheduling](docs/scheduling.md), observe the one-time test and then the first recurring scan. A saved prompt is not execution proof.
+7. **Review before sharing:** check all files and history using the [privacy guide](docs/privacy-review.md).
 
-## Duplicate the system
+## What to customize
 
-Already set up? See [how to use the workflow](docs/using-the-workflow.md), including the copyable tailoring request and recommended chat organization.
+Industry fit, functional fit, problem similarity, career learning and eligibility are useful evaluation dimensions. Their importance depends on your goals; the sample uses qualitative evidence rather than a personal scoring formula. A strong functional match can coexist with limited industry experience or unknown eligibility. See the [worked assessment and resume example](docs/worked-example.md).
 
-1. **Inspect your existing trackers.** Reuse jobs and contacts; back up affected schemas and rows privately before structural changes. Follow [the schema](docs/notion-schema.md), adding missing fields without changing existing status options or notes.
-2. **Add Companies.** Make the existing Company column in Jobs and People a relation to Companies, with reciprocal Jobs/People links. Back up and map every existing company assignment before converting its type, then restore and verify those assignments. Keep one Company column per tracker. Avoid copied profile URLs when an existing field already holds them. Do not merge ambiguous identities automatically. Use [the company page template](templates/company-page.md).
-3. **Create a private setup note.** Copy [the setup template](templates/private-setup.md) into your private workspace. Fill in destination links, your search scope, evidence locations, and method locations there. Never commit the completed note.
-4. **Connect your tools.** Authorize Notion, your job source, and document tools in the actual chat/runtime you intend to use. Connector availability differs across environments. Test a bounded read and write; verify document copy, edit and export capabilities separately.
-5. **Load your existing methods.** Keep your candidate-specific evaluation framework, tailoring method and independent QA method private. Install or load [the generic coordinator skill](skills/recruiting-coordinator/SKILL.md), then give it your private setup note. This repository deliberately does not supply personal scoring weights or targeting strategy.
-6. **Run one interactive pilot.** Evaluate one existing job, save one sourced company insight, refresh one known contact without replacing notes, and create a resume draft from private evidence. Review proposed changes before finalization unless you explicitly request otherwise. If document production is in scope, inspect the actual exported PDF; text-only preparation can stop at proposed edits and content QA.
-7. **Create an actual one-time task in your chosen runtime.** Follow [the scheduling procedure](docs/scheduling.md). Use [the smoke-test prompt](prompts/scheduled-smoke-test.md), record its actual ID/link and run time, and observe the scheduled writeback. Keep the computer awake for local runs; test asleep only for cloud runs. A prompt file is not a scheduled task.
-8. **Create one recurring task after the test succeeds.** Use [the daily prompt](prompts/daily-scan.md), with your own time zone and cadence. Keep the first run small. Verify its history, Notion output and duplicate handling before expanding the scope.
-
-For the detailed component boundaries, see [architecture](docs/architecture.md). For the entity-relationship diagram, field types and reciprocal links, see [database schema](docs/database-schema.md). To ask an assistant to implement your own copy, use [the build prompt](prompts/build-your-workspace.md). For on-demand commands and expected outputs, see [the coordinator](skills/recruiting-coordinator/SKILL.md). Before sharing your adapted copy, use [the privacy review](docs/privacy-review.md).
-
-## Boundaries and verification
-
-The workflow never infers qualifications, shared background, nationality, sponsorship eligibility or referral willingness from a name or employer. Unknowns remain visible. Search existing jobs by provider ID or canonical posting URL and people by verified professional profile before creating records. Preserve meaningful URL query parameters, such as requisition IDs.
-
-Tailoring and QA are separate passes. QA uses the actual JD, candidate evidence and current document rather than trusting the tailoring explanation. A user edit invalidates checks on the affected text. Visual PDF review and text extraction must refer to the exact final file, not just a chat draft. An unavailable tool is reported as a blocked step, never as completed work.
-
-## Tool documentation
-
-- [Notion relations](https://www.notion.com/help/relations-and-rollups)
-- [Trackly integration information](https://usetrackly.app/cli) — use the provider's supported connection flow.
-- [ChatGPT scheduled tasks](https://learn.chatgpt.com/docs/automations) and [scheduling walkthrough](https://developers.openai.com/training/walkthroughs/scheduled-tasks) — check the current account's capabilities and execution environment.
-
-This is a reproducible workflow kit, not a hosted service. No API subscription, additional paid runtime or unattended execution is assumed.
+Skills are instruction sets; connectors provide access to services; the scheduler triggers execution; Notion preserves work between chats. None substitutes for another. Checks on resume content do not prove PDF layout or employer ATS performance. Company priority, application status and referral willingness must not be inferred from an agent recommendation.
