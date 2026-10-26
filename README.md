@@ -47,7 +47,7 @@ Company insights live as dated, sourced sections on company pages. Reuse an exis
 7. **Create an actual one-time cloud task.** Follow [the scheduling procedure](docs/scheduling.md). Use [the smoke-test prompt](prompts/scheduled-smoke-test.md), record the real task link and run time, and observe the writeback while the computer is asleep. A prompt file is not a scheduled task.
 8. **Create one recurring task after the test succeeds.** Use [the daily prompt](prompts/daily-scan.md), with your own time zone and cadence. Keep the first run small. Verify its history, Notion output and duplicate handling before expanding the scope.
 
-For the detailed component boundaries, see [architecture](docs/architecture.md). To ask an assistant to implement your own copy, use [the build prompt](prompts/build-your-workspace.md). For on-demand commands and expected outputs, see [the coordinator](skills/recruiting-coordinator/SKILL.md). Before sharing your adapted copy, use [the privacy review](docs/privacy-review.md).
+For the detailed component boundaries, see [architecture](docs/architecture.md). For the entity-relationship diagram, field types and reciprocal links, see [database schema](docs/database-schema.md). To ask an assistant to implement your own copy, use [the build prompt](prompts/build-your-workspace.md). For on-demand commands and expected outputs, see [the coordinator](skills/recruiting-coordinator/SKILL.md). Before sharing your adapted copy, use [the privacy review](docs/privacy-review.md).
 
 ## Boundaries and verification
 
