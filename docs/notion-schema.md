@@ -1,12 +1,12 @@
 # Minimal Notion structure
 
-Inspect each live data source before writing. Names below are recommended mappings, not assumptions about existing trackers. Reuse equivalent properties before adding anything. Keep existing titles, status values, dates and rich-text notes. If an existing Company label already works, keep it; put navigation relations on Companies rather than adding a parallel Company column to every tracker.
+Inspect each live data source before writing. Names below are recommended mappings, not assumptions about existing trackers. Reuse equivalent properties before adding anything. Keep existing titles, status values, dates and rich-text notes. Make the existing Company column a relation to Companies, so it opens the company page. Before converting a select/multi-select, back up all assignments, map every label to a company record, restore the mapped values and verify them. Keep one Company column per tracker.
 
 | Record | One row represents | Minimum fields |
 |---|---|---|
-| Jobs | One specific opening | Existing role title, Company, JD link, application status and notes; Evaluation Status (select), Last Evaluated (date), Next Action (text), Next Action Date (date), Resume Link (URL), only if absent |
-| Companies | One company, independent of an opening | Name (title), Website (URL), User Priority (select: Unassigned/High/Normal/Low), Research Depth (select: Basic/Deep), Last Reviewed (date); one-way Jobs and People navigation relations |
-| People | One professional contact | Existing name, Company, relationship stage, contact/profile channel and notes; Current Role (text, including team if known), Last Checked (date), Next Action (text), Next Action Date (date), only if absent |
+| Jobs | One specific opening | Existing role title, Company (relation), JD link, application status and notes; Evaluation Status (select), Last Evaluated (date), Next Action (text), Next Action Date (date), Resume Link (URL), only if absent |
+| Companies | One company, independent of an opening | Name (title), Website (URL), User Priority (select: Unassigned/High/Normal/Low), Research Depth (select: Basic/Deep), Last Reviewed (date); reciprocal Jobs and People relations |
+| People | One professional contact | Existing name, Company (relation, allowing multiple companies), relationship stage, contact/profile channel and notes; Current Role (text, including team if known), Last Checked (date), Next Action (text), Next Action Date (date), only if absent |
 | Interactions | One dated conversation or outreach event | Existing title, date, takeaway, follow-up and follow-up date; Person (relation to People) |
 
 Evaluation Status: **Not evaluated, Screened out, Evaluated, Needs info, Error**. Treat an empty value as not yet reviewed by this workflow. Inspect earlier assessments in the page before reevaluating; empty metadata does not prove no prior evaluation exists. Evaluation status is independent of whether an application was submitted.
@@ -20,7 +20,7 @@ Use a company page's narrative for current brief, sourced insights, team criteri
 - **Networking actions:** people with a next action, sorted by its due date. Use the existing people table to browse all contacts.
 - **Interactions:** person, event date, takeaway, follow-up and due date.
 
-Backfill Companies' navigation relations from existing exact company labels; retain the original label fields. The agent maintains those navigation links when adding records. Do not silently merge aliases, change relationship stage or claim a profile was freshly checked just because its URL was copied. Reuse an existing Channel/profile field instead of copying the same URL into a new column. Deduplicate jobs using their existing JD link; store an actual provider ID in page metadata when available rather than introducing a column that merely repeats the URL. Seed companies as unresearched with Unassigned priority; leave unknown website and review date blank. For a new workspace, create the four tables; for an existing workspace, reuse equivalent tables.
+Map existing exact company labels to company pages before conversion; preserve multiple assignments and leave unassigned contacts empty. The reciprocal relations keep company-page navigation synchronized. Do not silently merge aliases, change relationship stage or claim a profile was freshly checked just because its URL was copied. Reuse an existing Channel/profile field instead of copying the same URL into a new column. Deduplicate jobs using their existing JD link; store an actual provider ID in page metadata when available rather than introducing a column that merely repeats the URL. Seed companies as unresearched with Unassigned priority; leave unknown website and review date blank. For a new workspace, create the four tables; for an existing workspace, reuse equivalent tables.
 
 ## Completion checks
 
