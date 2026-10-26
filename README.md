@@ -6,18 +6,13 @@ The repository contains generic sample skills, templates and fictional examples.
 
 ## How it works
 
-```mermaid
-flowchart LR
-    A[Your request or scheduled scan] --> C[Agent coordinator]
-    S[Job source and public research] --> C
-    E[Private evidence and skill methods] --> C
-    C <--> N[Notion: Jobs, Companies, People]
-    C --> D[Resume proposals and independent QA]
-    D --> H[You review and act]
-    H --> N
-```
+![Recruiting workflow: a local job scan or user request enters one coordinator, which uses evaluation, tailoring and QA specialists, handles company research and networking, and reads or updates Jobs, Companies and People. Candidate evidence stays private; document export is deferred.](docs/recruiting-system-overview.svg)
 
-There are three linked databases. One company can have many jobs; each identified job belongs to one company. Company research lives on company pages. Every contact has one People page, with separate dated toggles for conversations. Resume proposals can remain text; document editing and PDF export are an optional later step.
+The diagram shows one coordinator plus three specialist methods: **evaluation, tailoring and independent QA**. Company research and networking are procedures inside the coordinator in this configuration. The repository also includes optional standalone sample skills for those procedures; their presence here does not mean they are installed in a user's environment.
+
+Local scheduled work follows the Jobs path: discover, screen, evaluate and write a digest. Research, networking and resume preparation run when requested. The human sets priorities, reviews text, sends outreach and submits applications. Actual schedules, run results and private bindings remain outside this repository; see [how to verify execution](docs/scheduling.md).
+
+There are three linked databases. One company can have many jobs; each identified job belongs to one company. Insights live on company pages, and conversations live under dated toggles on the person's People page. Private master-resume/story/bullet/skills artifacts supply evidence rather than another tracker. The current workflow stops at text proposals and content QA; Google Docs/PDF preparation is deferred and optional. See the [schema](docs/database-schema.md), [skill catalog](docs/skills.md) and [artifact guide](docs/supporting-artifacts.md).
 
 | Tool / person | Responsibility |
 |---|---|
