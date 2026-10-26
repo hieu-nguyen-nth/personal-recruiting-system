@@ -38,6 +38,8 @@ Company insights live as dated, sourced sections on company pages. Reuse an exis
 
 ## Duplicate the system
 
+Already set up? See [how to use the workflow](docs/using-the-workflow.md), including the copyable tailoring request and recommended chat organization.
+
 1. **Inspect your existing trackers.** Reuse jobs and contacts; back up affected schemas and rows privately before structural changes. Follow [the schema](docs/notion-schema.md), adding missing fields without changing existing status options or notes.
 2. **Add Companies.** Make the existing Company column in Jobs and People a relation to Companies, with reciprocal Jobs/People links. Back up and map every existing company assignment before converting its type, then restore and verify those assignments. Keep one Company column per tracker. Avoid copied profile URLs when an existing field already holds them. Do not merge ambiguous identities automatically. Use [the company page template](templates/company-page.md).
 3. **Create a private setup note.** Copy [the setup template](templates/private-setup.md) into your private workspace. Fill in destination links, your search scope, evidence locations, and method locations there. Never commit the completed note.
