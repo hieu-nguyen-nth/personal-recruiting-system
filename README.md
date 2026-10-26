@@ -6,20 +6,20 @@ The repository contains generic sample skills, templates and fictional examples.
 
 ## How it works
 
-![Recruiting workflow: a local job scan or user request enters one coordinator, which uses evaluation, tailoring and QA specialists, handles company research and networking, and reads or updates Jobs, Companies and People. Candidate evidence stays private; document export is deferred.](docs/recruiting-system-overview.svg)
+![Ideal recruiting architecture: a verified schedule or user request enters one coordinator with five specialist methods for evaluation, company research, networking, tailoring and QA. Notion holds Jobs, Companies and People; private evidence and configured document tools support checked application files and human approval.](docs/recruiting-system-ideal.svg)
 
-The diagram shows one coordinator plus three specialist methods: **evaluation, tailoring and independent QA**. Company research and networking are procedures inside the coordinator in this configuration. The repository also includes optional standalone sample skills for those procedures; their presence here does not mean they are installed in a user's environment.
+This is the **ideal reference architecture**, not a report of an individual's local installation. It contains one coordinator and five specialist methods: **evaluation, company research, networking, tailoring and independent QA**. The six generic sample skills in this repository illustrate those modules; a smaller installation can keep research and networking inside the coordinator. Cloning the repository does not activate them.
 
-Local scheduled work follows the Jobs path: discover, screen, evaluate and write a digest. Research, networking and resume preparation run when requested. The human sets priorities, reviews text, sends outreach and submits applications. Actual schedules, run results and private bindings remain outside this repository; see [how to verify execution](docs/scheduling.md).
+Scheduled work follows the Jobs path: discover, screen, evaluate and write a digest. Research, networking and resume preparation run when requested. Use a verified local or cloud runtime according to your operating needs; local Codex requires an awake computer with the app running. The human sets priorities, reviews materials, sends outreach and submits applications. Local implementation diagrams, actual schedules, run results and private bindings stay outside this repository; see [how to verify execution](docs/scheduling.md).
 
-There are three linked databases. One company can have many jobs; each identified job belongs to one company. Insights live on company pages, and conversations live under dated toggles on the person's People page. Private master-resume/story/bullet/skills artifacts supply evidence rather than another tracker. The current workflow stops at text proposals and content QA; Google Docs/PDF preparation is deferred and optional. See the [schema](docs/database-schema.md), [skill catalog](docs/skills.md) and [artifact guide](docs/supporting-artifacts.md).
+There are three linked databases. One company can have many jobs; each identified job belongs to one company. Insights live on company pages, and conversations live under dated toggles on the person's People page. Private master-resume/story/bullet/skills artifacts supply evidence rather than another tracker. The complete target workflow includes editable documents, PDF export and exact-file QA through configured document tools. This stage is optional for a text-only installation and requires its own capability checks. See the [schema](docs/database-schema.md), [skill catalog](docs/skills.md) and [artifact guide](docs/supporting-artifacts.md).
 
 | Tool / person | Responsibility |
 |---|---|
 | Notion | Jobs, company research, contacts, conversation toggles and next actions |
 | Agent + skills | Evaluate work and fit, research with sources, propose edits and check evidence |
 | Trackly or another connected job source | Discover openings and retrieve JDs |
-| Scheduler | Run a bounded scan in the selected runtime; local Codex requires an awake computer with the app running |
+| Scheduler | Run a bounded scan in a verified local or cloud runtime; check tool access and actual writeback |
 | Private files / optional document editor | Authoritative candidate evidence, resume versions and approved exports |
 | You | Set priorities, correct evidence, review drafts, contact people and apply |
 

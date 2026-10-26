@@ -1,6 +1,8 @@
 # Component architecture
 
-The coordinator is an instruction set executed by the assistant. It loads the method needed for the request and uses connected tools; it is not a continuously running server. The reusable repository contains no live account configuration.
+This is the ideal reference architecture shown in the [overview](recruiting-system-ideal.svg). It describes the complete target workflow, not an individual's enabled capabilities. Actual local implementation views and execution evidence remain private.
+
+The coordinator is an instruction set executed by the assistant. It routes evaluation, company research, networking, tailoring and independent QA through configured methods; a smaller setup can combine procedures inside the coordinator. It is not a continuously running server. The reusable repository contains no live account configuration.
 
 | Component | Reads | Produces / owns |
 |---|---|---|
@@ -8,7 +10,7 @@ The coordinator is an instruction set executed by the assistant. It loads the me
 | Coordinator | Current record, source material, private setup and selected skill | Chooses the next step; records completion or the precise blocker |
 | Job-source connector | Search constraints or exact provider ID | Full JD, source URL and provider availability; not a guarantee of live employer status |
 | Research tools | Public company/professional sources and prior notes | Dated facts, citations, labeled inference and unknowns |
-| Evaluation / tailoring / QA skills | JD, company context and the relevant private artifacts | Assessment, evidence-backed proposals and a separate review; see [skill catalog](skills.md) |
+| Five specialist methods | JD, company/contact context and the relevant private artifacts | Evaluation, research, networking updates, evidence-backed proposals and independent review; see [skill catalog](skills.md) |
 | Notion | Existing schemas, records, relations and page bodies | Three linked databases, source-backed assessments, research, conversation toggles and saved next steps |
 | Optional document tools | Approved text and a copied template | Editable resume and exact exported file, separately checked for layout |
 | Human | Recommendations, proposed changes and QA findings | Priorities, factual corrections, final approval, outreach and submission |
