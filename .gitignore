@@ -1,0 +1,20 @@
+# Keep private work outside this repository; these are secondary protections.
+.DS_Store
+.env
+.env.*
+!.env.example
+private/
+local/
+backups/
+exports/
+credentials*
+*.pem
+*.key
+*.pdf
+*.docx
+*.rtf
+*.xlsx
+*.csv
+*.zip
+*.tar.gz
+__pycache__/
