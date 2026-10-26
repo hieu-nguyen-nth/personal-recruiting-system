@@ -11,7 +11,7 @@ This repository contains reusable instructions, prompts, a Notion schema, and di
 ```mermaid
 flowchart LR
     A[You ask] --> C[Agent coordinator]
-    B[Cloud schedule, once verified] --> C
+    B[Local or cloud schedule] --> C
     S[Job source and public research] --> C
     C <--> N[Notion: jobs, companies, people, interactions]
     P[Private evidence and existing skills] --> C
@@ -31,7 +31,7 @@ The agent selects the appropriate existing method: evaluate a role, research a c
 | Google Docs / Drive | Editable application documents and exported PDFs | Document editing and final layout inspection are different work from tracking. |
 | Agent coordinator | Route requests through existing evaluation, tailoring and QA methods | Reuses specialized methods while keeping one entry point. |
 | Trackly or another connected job source | Discover roles and retrieve JDs | Source access is checked in the environment that will actually run the work. |
-| A cloud-capable scheduler | Repeat a proven discovery/evaluation workflow | Required for operation while your computer is off; local scheduling is insufficient. |
+| A scheduler in the chosen runtime | Repeat a proven discovery/evaluation workflow | Local Codex needs an awake computer and running app; cloud execution is needed while the computer is off. |
 | You | Priorities, corrections, final approval, networking messages and submission | These decisions remain explicit and reviewable. |
 
 Company insights live as dated, sourced sections on company pages. Reuse an existing interaction table if available. There is no separate insights database, queue service, runs database, custom application, or deployment requirement.
@@ -45,8 +45,8 @@ Already set up? See [how to use the workflow](docs/using-the-workflow.md), inclu
 3. **Create a private setup note.** Copy [the setup template](templates/private-setup.md) into your private workspace. Fill in destination links, your search scope, evidence locations, and method locations there. Never commit the completed note.
 4. **Connect your tools.** Authorize Notion, your job source, and document tools in the actual chat/runtime you intend to use. Connector availability differs across environments. Test a bounded read and write; verify document copy, edit and export capabilities separately.
 5. **Load your existing methods.** Keep your candidate-specific evaluation framework, tailoring method and independent QA method private. Install or load [the generic coordinator skill](skills/recruiting-coordinator/SKILL.md), then give it your private setup note. This repository deliberately does not supply personal scoring weights or targeting strategy.
-6. **Run one interactive pilot.** Evaluate one existing job, save one sourced company insight, refresh one known contact without replacing notes, and create a resume draft from private evidence. Review proposed changes before finalization unless you explicitly request otherwise. Inspect the actual exported PDF.
-7. **Create an actual one-time cloud task.** Follow [the scheduling procedure](docs/scheduling.md). Use [the smoke-test prompt](prompts/scheduled-smoke-test.md), record the real task link and run time, and observe the writeback while the computer is asleep. A prompt file is not a scheduled task.
+6. **Run one interactive pilot.** Evaluate one existing job, save one sourced company insight, refresh one known contact without replacing notes, and create a resume draft from private evidence. Review proposed changes before finalization unless you explicitly request otherwise. If document production is in scope, inspect the actual exported PDF; text-only preparation can stop at proposed edits and content QA.
+7. **Create an actual one-time task in your chosen runtime.** Follow [the scheduling procedure](docs/scheduling.md). Use [the smoke-test prompt](prompts/scheduled-smoke-test.md), record its actual ID/link and run time, and observe the scheduled writeback. Keep the computer awake for local runs; test asleep only for cloud runs. A prompt file is not a scheduled task.
 8. **Create one recurring task after the test succeeds.** Use [the daily prompt](prompts/daily-scan.md), with your own time zone and cadence. Keep the first run small. Verify its history, Notion output and duplicate handling before expanding the scope.
 
 For the detailed component boundaries, see [architecture](docs/architecture.md). For the entity-relationship diagram, field types and reciprocal links, see [database schema](docs/database-schema.md). To ask an assistant to implement your own copy, use [the build prompt](prompts/build-your-workspace.md). For on-demand commands and expected outputs, see [the coordinator](skills/recruiting-coordinator/SKILL.md). Before sharing your adapted copy, use [the privacy review](docs/privacy-review.md).

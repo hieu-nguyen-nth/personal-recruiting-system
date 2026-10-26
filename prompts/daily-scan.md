@@ -1,6 +1,6 @@
 # Recurring discovery and evaluation prompt
 
-Use only after the one-time cloud test succeeds. Supply your private setup-note location, search scope, batch limit, desired cadence and time zone to the real scheduler. Verify the returned task entry and next run; saving this file does not create a task.
+Use only after the one-time scheduled test succeeds. Supply your private setup-note location, search scope, batch limit, desired cadence and time zone to the real scheduler. Verify the returned task entry and next run; saving this file does not create a task.
 
 > Read my private recruiting setup note and load its coordinator, evaluation method and accessible candidate reference. Discover roles within the configured scope using the connected job source. Check provider ID or canonical posting URL against existing Jobs before creating anything. Quickly screen new discoveries; run the existing full evaluation for viable/unclear roles and active unevaluated jobs, up to the configured batch limit. Inspect existing page assessments before repeating work. Preserve my notes, application statuses, company priorities and research-depth choices.
 >

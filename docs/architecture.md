@@ -6,7 +6,7 @@ This is a tool-connected workflow with persisted work in existing records. The c
 flowchart TB
   subgraph Inputs
     U[Human request / stop point]
-    S[Verified cloud task]
+    S[Local or cloud scheduled task]
     J[Job-source connector]
     W[Public web research]
   end

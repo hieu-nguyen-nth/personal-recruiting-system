@@ -1,6 +1,6 @@
-# One-time cloud test prompt
+# One-time scheduler test prompt
 
-Before scheduling, supply private values for the setup note, one full-JD source or bounded job query, a marked test-page destination, and the intended future time/time zone. Create the task through the real scheduler; return its actual task link and displayed run time. Do not create a recurrence.
+Before scheduling, supply private values for the setup note, one full-JD source or bounded job query, a marked test-page destination, and the intended future time/time zone. Create the task through the selected local or cloud scheduler; return its actual ID/link and configured run time. Local execution requires an awake computer with Codex running. Keep configured timing separate from observed execution. Do not create a recurrence.
 
 Task instructions:
 

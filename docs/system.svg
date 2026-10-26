@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
 <title id="title">Personal recruiting system</title>
-<desc id="desc">A request or verified cloud schedule starts an agent coordinator. The agent reads job and public research sources, uses private methods, updates Notion, and prepares documents for independent QA and human approval.</desc>
+<desc id="desc">A request or verified local or cloud schedule starts an agent coordinator. The agent reads job and public research sources, uses private methods, updates Notion, and prepares documents for independent QA and human approval.</desc>
 <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8Z" fill="#53667c"/></marker></defs>
 <rect width="1200" height="720" rx="20" fill="#f5f7fb"/>
 <g font-family="Arial, sans-serif" fill="#17283e"><text x="48" y="54" font-size="27" font-weight="700">Personal recruiting system</text><text x="48" y="83" font-size="16">Existing tools, one agent entry point, clear human decisions</text></g>
@@ -12,7 +12,7 @@
 </g>
 <g font-family="Arial, sans-serif" text-anchor="middle">
 <rect x="70" y="120" width="240" height="100" rx="14" fill="#e4edff" stroke="#b6c9ef"/><text x="190" y="157" fill="#17283e" font-size="21" font-weight="700">You ask</text><text x="190" y="187" fill="#42566f" font-size="16">A JD, company or next step</text>
-<rect x="890" y="120" width="240" height="100" rx="14" fill="#e4edff" stroke="#b6c9ef"/><text x="1010" y="157" fill="#17283e" font-size="21" font-weight="700">Cloud schedule</text><text x="1010" y="187" fill="#42566f" font-size="16">Only after a real run is verified</text>
+<rect x="890" y="120" width="240" height="100" rx="14" fill="#e4edff" stroke="#b6c9ef"/><text x="1010" y="157" fill="#17283e" font-size="21" font-weight="700">Scheduled scan</text><text x="1010" y="187" fill="#42566f" font-size="16">Only after a real run is verified</text>
 <rect x="70" y="250" width="240" height="94" rx="14" fill="#fff" stroke="#c6d1df"/><text x="190" y="287" fill="#17283e" font-size="19" font-weight="700">Job and research sources</text><text x="190" y="315" fill="#42566f" font-size="16">Connected source + public web</text>
 <rect x="890" y="250" width="240" height="94" rx="14" fill="#fff" stroke="#c6d1df"/><text x="1010" y="287" fill="#17283e" font-size="19" font-weight="700">Private evidence + methods</text><text x="1010" y="315" fill="#42566f" font-size="16">Evaluate · tailor · independent QA</text>
 <rect x="470" y="200" width="260" height="130" rx="16" fill="#146e63"/><text x="600" y="243" fill="#fff" font-size="23" font-weight="700">Agent coordinator</text><text x="600" y="275" fill="#edf9f5" font-size="16">Screen · research · connect steps</text><text x="600" y="301" fill="#edf9f5" font-size="16">Save results and next actions</text>

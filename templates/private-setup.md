@@ -12,7 +12,7 @@ Do not commit the completed version. Store credentials only in the provider's su
 | Candidate evidence | Authoritative private resume, story/bullet bank, skills and unresolved corrections |
 | Networking preferences | Your connection preferences and acceptable evidence |
 | Documents | Original template, output location and tested connector capabilities |
-| Scheduler | Actual cloud task URL, cadence, time zone and next run; otherwise Not created |
+| Scheduler | Selected local/cloud runtime; actual task ID/link, cadence, time zone and observed next run; distinguish created from executed |
 | Last result | Date, report link, completed work, remaining backlog and errors |
 
 ## Controls

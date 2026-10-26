@@ -26,4 +26,4 @@ No new plugin is needed to organize this request. The skills define the methods;
 
 Review/approval is part of using the resume workflow, not permission to submit. A proposal is not a final resume. Content QA does not prove document layout, PDF parsing or an employer ATS result. Update the evidence snapshots if the canonical source changes, and recheck affected text after revisions.
 
-For scheduled discovery, use the actual cloud scheduler and verify its first real run before relying on it. A chat organization scheme or saved prompt does not create an automation; see [scheduling](scheduling.md).
+For scheduled discovery, use the selected local or cloud scheduler and verify its first real run before relying on it. A chat organization scheme or saved prompt does not create an automation; see [scheduling](scheduling.md).
