@@ -29,6 +29,30 @@
 - Source type represented: Professional directory profile.
 - Limits: No email, introduction offer, referral willingness or hiring authority is supplied. Candidate Cedar's membership in the same fictional guild is a separate hypothetical user-provided fact for this case.
 
+## SRC-04 — fictional pricing and service description
+
+- Fixture URL: https://example.invalid/kestrel/pricing
+- Fictional publication date: Not supplied; simulated review date: 2029-02-04.
+- Authored excerpt: The standard service is sold as an annual subscription per museum workspace. Core intake and exception review are included; an assisted-import package is optional. No prices, customer totals, revenue or margins are supplied.
+- Source type represented: First-party pricing/service description.
+- Limits: Describes packaging, not realized sales, renewal rates or profitability.
+
+## SRC-05 — fictional values and ways-of-working page
+
+- Fixture URL: https://example.invalid/kestrel/working-here
+- Fictional publication date: 2029-01-10; simulated review date: 2029-02-04.
+- Authored excerpt: The company names “Traceable decisions” and “Care with collections” as values. It describes documenting the observation behind a product decision and reviewing unresolved record exceptions with domain specialists. The page says product, design and operations collaborate on intake discovery.
+- Source type represented: Official employer-stated values/working model.
+- Limits: Employer description, not independent employee-experience evidence or an interview scorecard. No reporting lines or general interview sequence is disclosed.
+
+## SRC-06 — fictional industry alternatives note
+
+- Fixture URL: https://example.invalid/exhibit-workflow-review/intake-options
+- Fictional publication date: 2029-01-25; simulated review date: 2029-02-04.
+- Authored excerpt: Small venues may use spreadsheets with a shared folder, the fictional StudioLedger catalog tool, or a dedicated intake workflow. The note describes StudioLedger as emphasizing catalog search; Kestrel's materials emphasize staged intake review. It supplies no comparative customer outcomes or market-share estimates.
+- Source type represented: An independent trade note, entirely invented for this case.
+- Limits: A qualitative secondary description, not a product benchmark, buying survey or proof of durable differentiation.
+
 ## How to use these sources
 
 Link source IDs to the relevant fixture section. Distinguish the authored fact from the assistant's interpretation. JD A is the only fixture that establishes official role requirements. None of these sources establishes an internal interview scorecard, sponsorship policy, or candidate eligibility.

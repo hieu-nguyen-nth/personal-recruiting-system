@@ -6,7 +6,7 @@ Six public reference skills define triggers, inputs, procedures, outputs and sto
 |---|---|---|---|
 | [Coordinator](../skills/recruiting-coordinator/SKILL.md) | Request, private setup, existing record/checkpoint | Selected method, exact draft/version and next action; honors requested stop | [Continuation state](../examples/fictional-case/README.md#continuation-checkpoint) |
 | [Evaluate job](../skills/evaluate-job/SKILL.md) | Full JD for full review, candidate evidence, goals, existing assessment | Quick/full assessment, evidence, unknowns, recommendation | [Two role decisions](../examples/fictional-case/outputs/job-evaluation.md) |
-| [Research company](../skills/research-company/SKILL.md) | Entity/team, chosen depth, prior brief, sources | Basic/deep brief or one insight; facts separated from inference | [Company brief](../examples/fictional-case/outputs/company-brief.md) |
+| [Company Intelligence](../skills/research-company/SKILL.md) | Company name/URL, depth, prior notes and sources; JD/resume optional | Executive brief + six-section profile; Quick/Basic, Standard, Deep or focused refresh | [Company brief](../examples/fictional-case/outputs/company-brief.md) |
 | [Manage networking](../skills/manage-networking/SKILL.md) | Company/person, criteria, verified sources or actual notes | Source-backed discovery/refresh or a dated toggle; current action preserved | [People page](../examples/fictional-case/outputs/people-page.md) |
 | [Tailor resume](../skills/tailor-resume/SKILL.md) | Exact JD, master resume, stories, bullet/skills evidence | Positioning, requirement mapping, exact edits and a named draft | [Tailoring proposal](../examples/fictional-case/outputs/tailoring-proposal.md) |
 | [Resume QA](../skills/resume-qa/SKILL.md) | Exact draft, raw evidence and JD | Prioritized defects, minimal corrections and named-version outcome | [Rejection and recheck](../examples/fictional-case/outputs/qa-review.md) |
@@ -17,7 +17,7 @@ Load the relevant SKILL.md as instructions, or adapt/install through your enviro
 
 Links work within this checkout. If installing a skill elsewhere, preserve accessible linked resources or replace relative paths with configured private locations. The [artifact guide](supporting-artifacts.md) and [blank pack](../templates/supporting-artifacts.md) define inputs without requiring a particular vendor for private files.
 
-A smaller installation can keep research and networking in its coordinator and use separate evaluation, tailoring and QA methods. The six public modules describe reusable responsibilities, not six proven personal installations. See [capability boundaries](capabilities-and-validation.md).
+A compact installation can use coordination, evaluation, Company Intelligence, tailoring and QA as five separate methods, with networking handled inside coordination. The six public modules describe reusable responsibilities, not six proven personal installations. See [capability boundaries](capabilities-and-validation.md).
 
 ## Run an application workflow
 

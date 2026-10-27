@@ -13,7 +13,7 @@ Start with the [complete fictional case](examples/fictional-case/README.md). Fol
 | Workflow and agent instruction design | [Six detailed skills](docs/skills.md): inputs, decision steps, outputs, stopping conditions and handoffs |
 | Information modeling | [One canonical schema](docs/database-schema.md): one company → many jobs; conversations inside People pages |
 | Evidence-based decisions | [Role assessment](examples/fictional-case/outputs/job-evaluation.md) separates industry, functional and feasibility questions |
-| Research translated into action | [Company brief](examples/fictional-case/outputs/company-brief.md) separates source facts, inference and preparation implications |
+| Research translated into action | [Six-section company profile](examples/fictional-case/outputs/company-brief.md) explains business, product, competition, recent changes and PM culture/hiring with source limits |
 | Relationship continuity | [People page](examples/fictional-case/outputs/people-page.md) preserves two conversations and a current action |
 | Resume tailoring and quality control | [Exact changes](examples/fictional-case/outputs/tailoring-proposal.md), [draft versions](examples/fictional-case/outputs/resume-draft.md), [rejected claims and correction check](examples/fictional-case/outputs/qa-review.md) |
 | Reliable bounded automation | [Simulated digest](examples/fictional-case/outputs/scan-digest.md) shows deduplication, deferred cursors and retry/failure expectations |
@@ -23,9 +23,9 @@ Start with the [complete fictional case](examples/fictional-case/README.md). Fol
 
 ![Ideal recruiting architecture: a request or verified schedule enters one coordinator with methods for evaluation, research, networking, tailoring and QA. Notion holds Jobs, Companies and People. Private evidence supports reviewed application content and optional document outputs; humans decide, contact people and submit.](docs/recruiting-system-ideal.svg)
 
-This is the **ideal reference architecture**, not a diagram of an individual's enabled installation. One coordinator routes five specialist methods. A smaller installation can keep research and networking inside its coordinator; six public skill folders do not imply six installed personal skills. See [components and handoffs](docs/architecture.md).
+This is the **ideal reference architecture**, not a diagram of an individual's enabled installation. One coordinator routes five specialist methods. Company Intelligence is a standalone research method; a compact installation can keep networking inside its coordinator. Six public skill folders do not imply six installed personal skills. See [components and handoffs](docs/architecture.md).
 
-Notion holds Jobs, Companies and People. A company can have many openings; research stays on its company page. Conversations live under dated toggles in a person's page. Private master-resume, story, bullet and skills artifacts supply evidence. Optional document tools format/export approved content and require separate exact-file checks.
+Notion holds Jobs, Companies and People. A company can have many openings; its executive intelligence brief, six-section profile and dated insights stay on the company page. Research starts from a company name/URL without requiring a JD or resume. Conversations live under dated toggles in a person's page. Private master-resume, story, bullet and skills artifacts supply evidence. Optional document tools format/export approved content and require separate exact-file checks.
 
 Scheduled work discovers, screens, evaluates and saves a bounded digest. Research, networking and resume preparation run on request. The human controls priorities, corrects facts, reviews materials, sends outreach and submits applications. Local execution requires an awake computer with the app running; cloud execution requires separately verified access. No live schedule, private binding or individual run log is included.
 

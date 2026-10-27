@@ -4,13 +4,13 @@ Separate **a designed capability**, **an authored demonstration**, and **an obse
 
 ## Module packaging
 
-The public kit has six reference skills. A compact implementation can use four installed methods—coordination, evaluation, tailoring and QA—with company research and networking handled inside coordination. Splitting those procedures into sample folders improves reuse; it does not establish that every folder was separately installed or independently exercised.
+The public kit has six reference skills. A compact implementation can use five installed methods—coordination, evaluation, Company Intelligence, tailoring and QA—with networking handled inside coordination. Splitting those procedures into sample folders improves reuse; it does not establish that every folder was separately installed or independently exercised.
 
 | Area | What this repository supplies | Evidence boundary |
 |---|---|---|
 | Coordination and resume continuity | Routing, stopping rules and a versioned checkpoint | The case is an authored reference answer, not an autonomous execution transcript |
 | Evaluation | Quick/full procedures and two contrasting role decisions | General framework, not personal scoring weights or a universal threshold |
-| Company research | Basic/deep modes, source provenance and inference discipline | Example excerpts are synthetic, not verified publications or real hiring criteria |
+| Company Intelligence | Quick/Basic, Standard, Deep and focused refresh; executive brief + six-section framework | Example excerpts are synthetic, not verified publications or real hiring criteria |
 | Networking | Discovery/refresh method and dated conversation storage | Example conversations are hypothetical; no outreach or referral occurred |
 | Tailoring and QA | Raw evidence, exact edits, deliberate error injection and correction check | Demonstrates review mechanics; claims are fictional and not usable candidate qualifications |
 | Scheduling | Creation/verification procedure, short trigger and maintained scan method | A saved file does not create a task; simulated digests do not prove execution |

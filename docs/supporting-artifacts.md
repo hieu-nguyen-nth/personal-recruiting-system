@@ -9,7 +9,7 @@ These inputs live in a private recruiting workspace, not extra Notion databases.
 | Bullet bank | Alternative phrasings, linked story ID, proposed/approved state and version | Tailoring; wording only, never independent proof |
 | Skills inventory | Tool/method, actual proficiency, context and story/source demonstrating use | Tailoring/QA; distinguish learning, prototype and production |
 | Recruiting playbook | User goals, target scope, fit criteria, constraints and rules for effort | Evaluation/coordinator; private preferences, not evidence that a fact occurred |
-| Exact JD and company brief | Versioned role requirements plus dated company findings and uncertainties | Evaluation, research, tailoring and QA; separate official requirements from inference |
+| Exact JD and company brief | Versioned role requirements plus an independent executive company brief, six-section profile, dated findings and uncertainties | Evaluation, research, tailoring and QA; separate official requirements from inference |
 | Template and application outputs | Original layout, role-specific copies, exact text/export versions and associated QA | Optional document tools and human review; exports are derived artifacts |
 | Job-page checkpoint | Last step, requested stop, source versions, exact current/reviewed draft, open questions and next owner | Coordinator/new chat; continuation state, not a new source of career facts |
 

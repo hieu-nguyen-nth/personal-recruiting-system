@@ -55,10 +55,12 @@ Enable the corresponding reverse property and reuse it if already present. Notio
 | Database | Minimum properties | Page body |
 |---|---|---|
 | Jobs | Existing role title, Company relation, JD link, application status and notes; evaluation state/date, next action/date, resume link if needed | Source/canonical identity; assessment with evidence and unknowns; last completed preparation step, requested stopping point, next step and exact draft version |
-| Companies | Name, website, user priority, research depth, last reviewed; reciprocal Jobs and People | Current brief; dated sourced insights; role/team criteria; open questions. See [company template](../templates/company-page.md). |
+| Companies | Name, website, user priority, research depth, last reviewed; reciprocal Jobs and People | Executive intelligence brief; six-section company profile; dated sourced insights; role/team criteria; open questions. See [company template](../templates/company-page.md). |
 | People | Existing name, Company relation, profile/contact channel, relationship stage and notes; current role, last checked, next action/date if needed | Identity/source notes plus one dated toggle per actual conversation or outreach event. See [person template](../templates/person-page.md). |
 
 Suggested evaluation states: Not evaluated, Screened out, Evaluated, Needs info, Error. This is separate from application status. Empty metadata does not prove an earlier assessment is absent: read the page first. Unknown eligibility is not a rejection. Retain existing application and relationship status options.
+
+Research Depth can retain existing Basic (Quick alias) and Deep choices while adding Standard. Preserve saved values; use Standard at execution time only when neither a request nor saved depth exists. Company Intelligence sections belong in the existing page body, not six new columns or another database.
 
 Keep one Company property per tracker. Reuse JD Link and Channel/profile fields; do not add URL copies. Put a genuine provider/requisition ID in job-page metadata when useful. Deduplicate by employer and requisition/canonical URL, including aggregator mirrors. Two different openings at the same company are two Jobs rows, not duplicates.
 

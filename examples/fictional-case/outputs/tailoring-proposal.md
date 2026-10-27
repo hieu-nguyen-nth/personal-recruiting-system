@@ -4,7 +4,7 @@ Target: EX-KES-41. Inputs: [JD A](../inputs/job-descriptions.md), [master-r0](..
 
 ## Positioning
 
-Lead with observation and carefully bounded testing, followed by prototype facilitation and spreadsheet quality checks. This supports a discovery assignment. Do not position the candidate as an experienced collection-software PM or production engineer. Company research supplies questions and context, not new candidate facts.
+Lead with observation and carefully bounded testing, followed by prototype facilitation and spreadsheet quality checks. This supports a discovery assignment. Do not position the candidate as an experienced collection-software PM or production engineer. The independent Company Intelligence profile supplies business context and role-source distinctions, not new candidate facts. Evidence mapping happens here, not inside company research.
 
 ## Requirement-to-evidence map
 

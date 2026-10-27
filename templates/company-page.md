@@ -1,18 +1,39 @@
-# Company research page template
+# Company Intelligence page template
 
-## Current brief
-Products/customers, current priorities and the relevant business/team. Mark the review date and research scope. An unresearched page says so explicitly.
+Keep this content in the existing Company record. Set scope, as-of date, depth and source coverage; preserve existing notes, user priority, research-depth choices and Jobs/People relations. Basic is a supported alias for Quick; Standard is the default only when neither requested nor saved.
 
-## Dated insights
-For each finding: observation date; source URL and publication date when available; fact; interpretation and alternatives; confidence; implication for applying, preparing or networking. Distinguish source evidence from interpretation. Preserve corrections and history.
+## Executive intelligence brief
 
-## Team and role criteria
-What work needs doing? What evidence would demonstrate capability? Which criteria are official, inferred or unknown? Link relevant jobs rather than duplicating their entire JDs.
+Company in plain language; strategic engine/tension; material changes; PM lens; what to watch and a few sources/products to explore. Keep it concise and avoid repeating its facts throughout the profile.
 
-## People and questions
-Link People records. Record a suitable question and shared-background evidence when relevant. Conversation notes belong under dated toggles inside each person's People page.
+## 1. Company snapshot
 
-## Next actions
-Decision-changing questions, next step and any user-agreed date. Priority and research depth remain user choices.
+Products, user/buyer/payer, problem, business-unit/geography boundary, revenue model and dated scale evidence. Unknowns stay explicit.
 
-See the [completed synthetic company page](../examples/fictional-case/outputs/company-brief.md) for a worked version with fact/inference separation. Its sources are invented fixtures, not real publications.
+## 2. Strategy and business model
+
+Revenue/growth mechanisms, investment priorities, costs and tradeoffs. Separate management ambition from demonstrated traction; identify indicators to watch.
+
+## 3. Product and customer understanding
+
+One important workflow, value-producing action, friction, monetization and tradeoffs. Label pilot/announced versus shipped; label improvements as hypotheses rather than roadmap facts.
+
+## 4. Market and competitive landscape
+
+Relevant segment, comparable competitors/substitutes and a qualified differentiation thesis. Scope and date market estimates, or explain qualitatively.
+
+## 5. Recent developments and business implications
+
+Latest available earnings/material business update; date / change / implication / what to watch. Distinguish announcement, launch and completion.
+
+## 6. Organization, culture and PM hiring
+
+Supported organization/decision rights; stated values; culture evidence and limits; general hiring qualities; specific current role/program criteria. Label official role/company evidence, inference, anecdotes and unknowns separately.
+
+## Dated insights and review history
+
+For each update: source URL/title; publication/event and observation dates; Fact; Analysis/business implication; Unknown; affected section. Supersede stale claims explicitly while preserving notes. Keep separate review dates for untouched sections; adding one insight does not mark the whole company revalidated.
+
+## Links and open questions
+
+Reuse related Jobs and People. Conversations stay inside the People page. Keep business knowledge distinct from candidate fit, resume mapping and networking searches. See the [completed synthetic profile](../examples/fictional-case/outputs/company-brief.md) and [framework](../skills/research-company/references/company-framework.md).

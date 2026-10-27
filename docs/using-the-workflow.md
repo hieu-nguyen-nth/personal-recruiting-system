@@ -18,7 +18,7 @@ No new plugin is needed to organize this request. The skills define the methods;
 |---|---|---|
 | Evaluate this JD | Specific JD/job page | Assessment, sources, unknowns and next action on the job page |
 | Evaluate my considering jobs | Existing active-job view | Bounded evaluations, linked digest, remaining work/errors |
-| Research this company, basic/deep | Company name/page and chosen depth | Company brief, dated insights and decision-changing questions |
+| Research this company, Quick/Standard/Deep | Company name/page, optional depth; no JD/resume required | Executive brief, six-section company profile, dated sources and knowledge gaps |
 | Save this insight | Finding and source | Dated update on the existing company page |
 | Find people / refresh this contact | Company/person and your connection preferences | Sourced identity/connection evidence, uncertainties and suggested next step |
 | Log this conversation | Actual notes and person | Dated toggle on the existing People page and current follow-up properties |
@@ -27,3 +27,11 @@ No new plugin is needed to organize this request. The skills define the methods;
 Review/approval is part of using the resume workflow, not permission to submit. A proposal is not a final resume. Content QA does not prove document layout, PDF parsing or an employer ATS result. Update the evidence snapshots if the canonical source changes, and recheck affected text after revisions.
 
 For scheduled discovery, use the selected local or cloud scheduler and verify its first real run before relying on it. A chat organization scheme or saved prompt does not create an automation; see [scheduling](scheduling.md).
+
+## Company Intelligence request examples
+
+> Research [company name or URL] at Standard depth. Use research-company and its six-section framework. Return an executive intelligence brief followed by the profile, with dated sources and explicit unknowns. Focus on understanding the business; do not evaluate my candidacy or search for contacts.
+
+> Refresh the existing company page using this article. Update only affected sections and the current synthesis, preserve earlier notes, and leave untouched sections' review dates unchanged.
+
+Quick/Basic, Standard and Deep are effort levels, not promises of a particular tool. Research-only requests may return in chat; add “save to the existing company page” when persistence is desired.

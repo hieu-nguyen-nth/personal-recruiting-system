@@ -14,11 +14,11 @@ Identify the target record, requested outcome and stopping point. “Prepare thr
 | Request | Method | Saved result |
 |---|---|---|
 | Evaluate a JD or backlog | [evaluate-job](../evaluate-job/SKILL.md) | Assessment, unknowns and next action |
-| Basic/deep research or one insight | [research-company](../research-company/SKILL.md) | Company-page finding and implication |
+| Quick/Standard/Deep intelligence or one insight | [research-company](../research-company/SKILL.md) | Company-page finding and implication |
 | Find/refresh people or log notes | [manage-networking](../manage-networking/SKILL.md) | Verified identity or conversation toggle |
 | Prepare a resume | [tailor-resume](../tailor-resume/SKILL.md), then [resume-qa](../resume-qa/SKILL.md) | Exact draft, evidence mapping and independent findings |
 
-Research and networking are available on request, not compulsory prerequisites to applying. Reuse current research instead of silently expanding the assignment.
+Invoke research-company for company understanding from a name/URL; a JD and candidate evidence are optional. It returns an executive brief plus six business/product/market/PM sections. Respect requested or saved depth (Basic = Quick); default to Standard only when neither exists. A focused insight updates affected sections. Research does not perform candidate fit, resume mapping or people discovery. Research and networking run on request, not as compulsory application steps or automatic scan work.
 
 ## Resume and preserve
 

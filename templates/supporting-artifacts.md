@@ -40,7 +40,7 @@ Copy this outside the repository before filling it. Do not commit real candidate
 - Industry/customer preferences:
 - Feasibility constraints to check:
 - Decision criteria and treatment of unknowns:
-- Explicit rule for basic versus deep research:
+- Requested/saved Quick/Basic, Standard or Deep company-research depth (Standard only when neither is set):
 - Networking connection preferences and required evidence:
 
 These are user preferences, not proof of experience. General industry/functional-fit examples are in the guide; no personal formula is required.
