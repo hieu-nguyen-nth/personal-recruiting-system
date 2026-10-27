@@ -4,7 +4,7 @@
 Products/customers, current priorities and the relevant business/team. Mark the review date and research scope. An unresearched page says so explicitly.
 
 ## Dated insights
-For each finding: observation date; source URL and publication date when available; finding; confidence; implication for applying, preparing or networking. Distinguish source evidence from interpretation. Preserve corrections and history.
+For each finding: observation date; source URL and publication date when available; fact; interpretation and alternatives; confidence; implication for applying, preparing or networking. Distinguish source evidence from interpretation. Preserve corrections and history.
 
 ## Team and role criteria
 What work needs doing? What evidence would demonstrate capability? Which criteria are official, inferred or unknown? Link relevant jobs rather than duplicating their entire JDs.
@@ -14,3 +14,5 @@ Link People records. Record a suitable question and shared-background evidence w
 
 ## Next actions
 Decision-changing questions, next step and any user-agreed date. Priority and research depth remain user choices.
+
+See the [completed synthetic company page](../examples/fictional-case/outputs/company-brief.md) for a worked version with fact/inference separation. Its sources are invented fixtures, not real publications.

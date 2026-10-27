@@ -32,3 +32,7 @@ The job page is the continuation point: last completed step, next step, requeste
 A configured schedule is not an observed run. Record the actual scheduled trigger, tool results and verified Notion writeback; test the recurring task separately. This can prove local integration without proving laptop-closed operation. See [scheduling](scheduling.md). Store actual IDs, timestamps, test employers and results privately; the shared kit documents how to repeat the checks.
 
 A tool failure leaves its dependent step incomplete. A stored JD read is not a fresh employer-site check. A contact match is not a referral. A draft is not a sent message or submitted application. These distinctions make the system resumable without inventing progress.
+
+## Inspect implementation decisions
+
+Read the [decision/tradeoff log](design-decisions.md) for why these components exist, the [case](../examples/fictional-case/README.md) for inspectable handoffs, and [capability boundaries](capabilities-and-validation.md) for the distinction between authored outputs, private integration experience and optional target features. The [maintained scan procedure](scan-procedure.md) keeps detailed behavior out of the trigger prompt.

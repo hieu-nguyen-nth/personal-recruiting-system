@@ -1,9 +1,7 @@
-# Recurring discovery and evaluation prompt
+# Short recurring scan trigger
 
-Use only after the one-time scheduled test succeeds. Supply your private setup-note location, search scope, batch limit, desired cadence and time zone to the real scheduler. Verify the returned task entry and next run; saving this file does not create a task.
+Create the actual task only after the required source/read/write checks pass. Keep detailed behavior in the [maintained procedure](../docs/scan-procedure.md), or a private adapted copy accessible to the execution chat. Supply its location plus the private setup location when configuring the task. Do not paste secrets into the prompt.
 
-> Read my private recruiting setup note and load its coordinator, evaluation method and accessible candidate reference. Discover roles within the configured scope using the connected job source. Check provider ID or canonical posting URL against existing Jobs before creating anything. Quickly screen new discoveries; run the existing full evaluation for viable/unclear roles and active unevaluated jobs, up to the configured batch limit. Inspect existing page assessments before repeating work. Preserve my notes, application statuses, company priorities and research-depth choices.
->
-> Save sourced assessments, dates, evaluation status and concrete next actions to the correct job pages. Unknown eligibility remains unknown. Do not produce resume files, perform deep company research, send messages or apply during this scan. Update the latest-report section of my private setup note with new worthwhile roles, decisions needed, known deadlines, evaluated records, remaining backlog, scan coverage and any errors. Link directly to the records. Report partial completion accurately; never mark an inaccessible JD evaluated.
->
-> Notify me when there are worthwhile new roles, a time-sensitive action, an execution failure or input required. Otherwise keep the completed run available in history without an unnecessary status notification where the scheduler supports that behavior.
+> Use recruiting-coordinator, my private recruiting setup and the maintained scan procedure. Resume deferred discovery, respect configured discovery/backlog limits, deduplicate and preserve user edits/statuses. Save and read back the dated digest with coverage, next cursor, actions and failures. Stop dependent work when required references/tools fail. No outreach, submission or document/PDF work.
+
+This is a trigger template, not a saved schedule. Choose cadence/timezone in the actual scheduler, keep one intended recurrence, and verify its first execution. Use the configured notification settings rather than embedding delivery preferences in this prompt. See [schedule setup](../docs/scheduling.md).

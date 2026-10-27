@@ -1,40 +1,43 @@
 # Personal Recruiting System
 
-A practical kit for running a personal recruiting workflow with an assistant, Notion and a connected job source. It supports job evaluation, company research, networking, resume tailoring and independent quality review. Use existing tools; no website or backend is required.
+A recruiting workflow built from an assistant, reusable skills, Notion and a connected job source. It connects discovery, company learning, relationships and evidence-backed resume preparation without a custom website or backend.
 
-The repository contains generic sample skills, templates and fictional examples. Your resume, evidence banks, contacts, targeting strategy, tracker links and account configuration stay in your private workspace. Cloning this repository does not install skills, connect tools or create schedules.
+This repository is a **reference implementation and a fictional demonstration**. It exposes system design and operating methods, not a candidate's resume, contacts, personal strategy or account configuration. Cloning it does not install skills, connect accounts or create a schedule.
 
-## How it works
+## See the system work
 
-![Ideal recruiting architecture: a verified schedule or user request enters one coordinator with five specialist methods for evaluation, company research, networking, tailoring and QA. Notion holds Jobs, Companies and People; private evidence and configured document tools support checked application files and human approval.](docs/recruiting-system-ideal.svg)
+Start with the [complete fictional case](examples/fictional-case/README.md). Follow two openings at one company from discovery to an independently reviewed text draft. Inspect the raw evidence, requirement mapping, exact edits and QA corrections. Every case fact was invented from scratch; it is not an anonymized resume.
 
-This is the **ideal reference architecture**, not a report of an individual's local installation. It contains one coordinator and five specialist methods: **evaluation, company research, networking, tailoring and independent QA**. The six generic sample skills in this repository illustrate those modules; a smaller installation can keep research and networking inside the coordinator. Cloning the repository does not activate them.
-
-Scheduled work follows the Jobs path: discover, screen, evaluate and write a digest. Research, networking and resume preparation run when requested. Use a verified local or cloud runtime according to your operating needs; local Codex requires an awake computer with the app running. The human sets priorities, reviews materials, sends outreach and submits applications. Local implementation diagrams, actual schedules, run results and private bindings stay outside this repository; see [how to verify execution](docs/scheduling.md).
-
-There are three linked databases. One company can have many jobs; each identified job belongs to one company. Insights live on company pages, and conversations live under dated toggles on the person's People page. Private master-resume/story/bullet/skills artifacts supply evidence rather than another tracker. The complete target workflow includes editable documents, PDF export and exact-file QA through configured document tools. This stage is optional for a text-only installation and requires its own capability checks. See the [schema](docs/database-schema.md), [skill catalog](docs/skills.md) and [artifact guide](docs/supporting-artifacts.md).
-
-| Tool / person | Responsibility |
+| Capability demonstrated | Inspectable evidence |
 |---|---|
-| Notion | Jobs, company research, contacts, conversation toggles and next actions |
-| Agent + skills | Evaluate work and fit, research with sources, propose edits and check evidence |
-| Trackly or another connected job source | Discover openings and retrieve JDs |
-| Scheduler | Run a bounded scan in a verified local or cloud runtime; check tool access and actual writeback |
-| Private files / optional document editor | Authoritative candidate evidence, resume versions and approved exports |
-| You | Set priorities, correct evidence, review drafts, contact people and apply |
+| Workflow and agent instruction design | [Six detailed skills](docs/skills.md): inputs, decision steps, outputs, stopping conditions and handoffs |
+| Information modeling | [One canonical schema](docs/database-schema.md): one company → many jobs; conversations inside People pages |
+| Evidence-based decisions | [Role assessment](examples/fictional-case/outputs/job-evaluation.md) separates industry, functional and feasibility questions |
+| Research translated into action | [Company brief](examples/fictional-case/outputs/company-brief.md) separates source facts, inference and preparation implications |
+| Relationship continuity | [People page](examples/fictional-case/outputs/people-page.md) preserves two conversations and a current action |
+| Resume tailoring and quality control | [Exact changes](examples/fictional-case/outputs/tailoring-proposal.md), [draft versions](examples/fictional-case/outputs/resume-draft.md), [rejected claims and correction check](examples/fictional-case/outputs/qa-review.md) |
+| Reliable bounded automation | [Simulated digest](examples/fictional-case/outputs/scan-digest.md) shows deduplication, deferred cursors and retry/failure expectations |
+| Engineering judgment | [Design decisions and tradeoffs](docs/design-decisions.md); [capability and validation boundaries](docs/capabilities-and-validation.md) |
 
-## Start here
+## Architecture
 
-1. **Understand the model:** read the [architecture](docs/architecture.md) and the single [database schema](docs/database-schema.md).
-2. **Prepare private evidence:** use the [supporting-artifact guide](docs/supporting-artifacts.md). Keep your completed files outside this repository.
-3. **Choose methods:** review the [skill catalog](docs/skills.md). Use your existing methods or adapt the clearly labeled samples; keep personal criteria private.
-4. **Build the workspace:** give an assistant the [build prompt](prompts/build-your-workspace.md) and a privately completed [setup note](templates/private-setup.md). Inspect/reuse existing trackers, preserve assignments and notes, then verify relations.
-5. **Try a small workflow:** follow the [fictional worked example](docs/worked-example.md) and [request guide](docs/using-the-workflow.md). Evaluate a job, save a company finding, log a real conversation in a person's page, then prepare text and run separate QA.
-6. **Create the actual schedule:** follow [scheduling](docs/scheduling.md), observe the one-time test and then the first recurring scan. A saved prompt is not execution proof.
-7. **Review before sharing:** check all files and history using the [privacy guide](docs/privacy-review.md).
+![Ideal recruiting architecture: a request or verified schedule enters one coordinator with methods for evaluation, research, networking, tailoring and QA. Notion holds Jobs, Companies and People. Private evidence supports reviewed application content and optional document outputs; humans decide, contact people and submit.](docs/recruiting-system-ideal.svg)
 
-## What to customize
+This is the **ideal reference architecture**, not a diagram of an individual's enabled installation. One coordinator routes five specialist methods. A smaller installation can keep research and networking inside its coordinator; six public skill folders do not imply six installed personal skills. See [components and handoffs](docs/architecture.md).
 
-Industry fit, functional fit, problem similarity, career learning and eligibility are useful evaluation dimensions. Their importance depends on your goals; the sample uses qualitative evidence rather than a personal scoring formula. A strong functional match can coexist with limited industry experience or unknown eligibility. See the [worked assessment and resume example](docs/worked-example.md).
+Notion holds Jobs, Companies and People. A company can have many openings; research stays on its company page. Conversations live under dated toggles in a person's page. Private master-resume, story, bullet and skills artifacts supply evidence. Optional document tools format/export approved content and require separate exact-file checks.
 
-Skills are instruction sets; connectors provide access to services; the scheduler triggers execution; Notion preserves work between chats. None substitutes for another. Checks on resume content do not prove PDF layout or employer ATS performance. Company priority, application status and referral willingness must not be inferred from an agent recommendation.
+Scheduled work discovers, screens, evaluates and saves a bounded digest. Research, networking and resume preparation run on request. The human controls priorities, corrects facts, reviews materials, sends outreach and submits applications. Local execution requires an awake computer with the app running; cloud execution requires separately verified access. No live schedule, private binding or individual run log is included.
+
+## Duplicate the system
+
+1. **Understand the decisions:** read [architecture](docs/architecture.md), [tradeoffs](docs/design-decisions.md) and the [schema](docs/database-schema.md).
+2. **Replay offline first:** follow the [fictional case](examples/fictional-case/README.md). No accounts are needed; the outputs are reference answers, not live execution proof.
+3. **Prepare private inputs:** use the [artifact guide](docs/supporting-artifacts.md) and copy its [blank pack](templates/supporting-artifacts.md) outside this checkout. Supply your own facts and goals.
+4. **Choose methods:** read the [skill catalog](docs/skills.md). Load repo-local instructions or adapt/install them without overwriting existing personal skills. Installation alone grants no service access.
+5. **Connect and map privately:** complete the [setup note](templates/private-setup.md) outside the repo and use the [build prompt](prompts/build-your-workspace.md). Inspect existing trackers, reuse fields and verify relations before relying on them.
+6. **Try one real request:** use the [request guide](docs/using-the-workflow.md). Save the exact draft, reviewed version and next action so another chat can continue.
+7. **Create and verify scheduling:** follow [schedule setup](docs/scheduling.md), observe the actual test and first recurring run. Keep procedures in a maintained reference; keep the trigger short.
+8. **Review before publishing:** check the complete proposed tree, history and metadata using the [sharing review](docs/privacy-review.md).
+
+The examples use general industry, function, problem, learning and feasibility dimensions, without private scoring weights or personal targeting rules. Skill instructions, connectors, schedulers and saved records have separate responsibilities. Text QA does not establish PDF layout or employer ATS performance. See [what is demonstrated versus verified](docs/capabilities-and-validation.md).

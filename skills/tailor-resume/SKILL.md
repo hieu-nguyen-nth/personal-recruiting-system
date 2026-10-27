@@ -1,16 +1,36 @@
 ---
 name: tailor-resume
-description: Propose targeted resume changes for a specific JD using verified candidate artifacts; show exact edits and source references without inventing achievements or credentials.
+description: Map one JD to verified evidence and propose traceable resume edits; preserve claim scope and hand the exact draft to separate QA.
 ---
 
-# Tailor a resume — generic sample
+# Tailor a resume — reference implementation
 
-Read the exact JD, job's saved progress, company brief, current master resume, relevant story/bullet bank and skills inventory. Use the private method if selected; otherwise this sample supplies a basic workflow. See [supporting artifacts](../../docs/supporting-artifacts.md). Follow current corrections and flag unresolved source conflicts.
+Require a specific JD, current master resume, relevant story/bullet bank, skills inventory and corrections. Read reusable company research and saved job progress. See [artifact roles](../../docs/supporting-artifacts.md). Missing evidence stays missing; a desired qualification cannot supply its own proof.
 
-Choose positioning from actual work and evidence: strong functional ownership may deserve emphasis even when industry experience is partial. Match a JD requirement to a real story before choosing phrasing. Do not convert prototype work to production, team outcomes to sole ownership, targets to realized results or a pilot metric to company-wide impact. Keywords cannot supply missing qualifications.
+## Select evidence before wording
 
-Show the most useful original/proposed edits with source references and reasons; give review text consistent with those proposals. Preserve chronology, titles, dates, contribution and metric scope. Include additional skills only when supported. If missing evidence prevents a claim, omit it or ask for that specific fact. The [fictional walkthrough](../../docs/worked-example.md) demonstrates a traceable bullet.
+1. Identify the role's main deliverable and material requirements. Separate mandatory credentials from desirable experience.
+2. Map requirements to story IDs, personal contribution, outcome and limits. Label coverage Direct, Transferable or Unsupported.
+3. Choose positioning around the strongest supported match. Industry and functional fit may differ; transferable observation skills do not establish domain expertise.
+4. Select/reorder evidence for relevance while preserving chronology, titles and dates. Trace bullet variants back to raw stories; derived wording is not independent proof.
 
-Honor the user's requested stop/review preference; by default present proposals for review before finalization. Save draft identity, sources, last completed step and next action on the job page. A review draft is not an approved application file.
+## Exact edits
 
-Hand the actual draft, raw evidence and JD to the separate [resume-qa](../resume-qa/SKILL.md) pass; do not treat this skill's explanation as verification. Document editing/export occurs only when requested and supported, using a copy of the template. No message or application submission is authorized by tailoring.
+```text
+JD requirement:
+Source story / version and supporting facts:
+Original text:
+Proposed text:
+Reason to emphasize it:
+Limits retained / unsupported requirement:
+```
+
+Make contribution and measurement scope visible. Do not turn assistance into sole leadership, coursework into employment, a prototype into production, a target into an achieved result or a local pilot into company-wide impact. Retain units, baseline and qualifiers. Include skills only at supported proficiency. Resolve source conflicts before using the contested claim.
+
+## Delivery and review
+
+Return positioning, requirement mapping, material original/proposed changes, a coherent versioned draft and unresolved gaps. Honor the requested stopping point; by default stop for user review before finalization. Save draft/version and next step on the job page.
+
+Hand the exact current draft, JD and raw evidence to [resume-qa](../resume-qa/SKILL.md). Do not treat your own rationale as verification. User changes create a new draft and require affected claims to be rechecked. Formatting/export needs requested supported tools, a copied template and exact-file inspection; text QA proves neither PDF layout nor ATS performance.
+
+The [fictional proposal](../../examples/fictional-case/outputs/tailoring-proposal.md) emphasizes observation and a limited equipment-desk pilot, omitting unsupported production coding and collection-domain expertise. The [review chain](../../examples/fictional-case/outputs/resume-draft.md) deliberately injects a faulty reviewer revision to demonstrate QA rejection. That revision is a teaching fixture, not acceptable tailoring output.

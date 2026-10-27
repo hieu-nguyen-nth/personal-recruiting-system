@@ -1,20 +1,26 @@
-# Skill catalog
+# Skill catalog and handoffs
 
-The repository includes six small, **generic samples**, written for this kit. They contain no real candidate evidence, private scoring formula or personal targeting strategy. They are starting instructions, not copies of an individual's installed skills. Prefer your own established methods when available and map them in the private setup note.
+Six public reference skills define triggers, inputs, procedures, outputs and stopping conditions. They are general methods authored for this kit, not copies of private candidate methods. Personal scoring weights, real evidence and networking preferences belong in the private setup.
 
-| Sample skill | Use it for | Expected result |
-|---|---|---|
-| [recruiting-coordinator](../skills/recruiting-coordinator/SKILL.md) | Route a request and resume work at a named step | Selected method, saved progress and next action |
-| [evaluate-job](../skills/evaluate-job/SKILL.md) | Quick screen or full JD assessment | Evidence for industry/function/problem fit, career value and feasibility; unknowns and next check |
-| [research-company](../skills/research-company/SKILL.md) | Basic/deep company research or saving one insight | Sourced company-page brief and recruiting implications |
-| [manage-networking](../skills/manage-networking/SKILL.md) | Find/refresh a contact or log a conversation | Verified People record and preserved dated conversation toggles |
-| [tailor-resume](../skills/tailor-resume/SKILL.md) | Select and phrase real evidence for one role | Positioning, exact original/proposed changes, sources and review draft |
-| [resume-qa](../skills/resume-qa/SKILL.md) | Review the actual draft independently | Claim/coverage issues, targeted corrections and explicit limits of the review |
+| Skill | Required inputs | Output / handoff | Inspect an example |
+|---|---|---|---|
+| [Coordinator](../skills/recruiting-coordinator/SKILL.md) | Request, private setup, existing record/checkpoint | Selected method, exact draft/version and next action; honors requested stop | [Continuation state](../examples/fictional-case/README.md#continuation-checkpoint) |
+| [Evaluate job](../skills/evaluate-job/SKILL.md) | Full JD for full review, candidate evidence, goals, existing assessment | Quick/full assessment, evidence, unknowns, recommendation | [Two role decisions](../examples/fictional-case/outputs/job-evaluation.md) |
+| [Research company](../skills/research-company/SKILL.md) | Entity/team, chosen depth, prior brief, sources | Basic/deep brief or one insight; facts separated from inference | [Company brief](../examples/fictional-case/outputs/company-brief.md) |
+| [Manage networking](../skills/manage-networking/SKILL.md) | Company/person, criteria, verified sources or actual notes | Source-backed discovery/refresh or a dated toggle; current action preserved | [People page](../examples/fictional-case/outputs/people-page.md) |
+| [Tailor resume](../skills/tailor-resume/SKILL.md) | Exact JD, master resume, stories, bullet/skills evidence | Positioning, requirement mapping, exact edits and a named draft | [Tailoring proposal](../examples/fictional-case/outputs/tailoring-proposal.md) |
+| [Resume QA](../skills/resume-qa/SKILL.md) | Exact draft, raw evidence and JD | Prioritized defects, minimal corrections and named-version outcome | [Rejection and recheck](../examples/fictional-case/outputs/qa-review.md) |
 
-## How the samples work together
+## Use and install
 
-The coordinator routes a scheduled scan to evaluation. An application request may use company research, then tailoring, then a separate QA pass. Networking is requested as needed, not automatically treated as a prerequisite for applying. Each skill reads only the [artifacts](supporting-artifacts.md) it needs. You can stop after evaluation, research, proposed edits or QA.
+Load the relevant SKILL.md as instructions, or adapt/install through your environment's supported skill flow. These repo-local folders are not automatically installed. Avoid overwriting a same-named personal skill: choose a separate name/location. Installation grants neither account access nor scheduled execution.
 
-These folders are repo-local examples, not automatically installed skills. Load the relevant SKILL.md as instructions, or use your environment's supported skill installation flow. When adapting/installing a sample, avoid replacing a same-named personal skill; use a separate name or location. Installation does not connect accounts or grant write access. The sample coordinator's relative links work inside this checkout; if installing it elsewhere, preserve the linked sibling folders, docs and templates, or replace the relative links with your own accessible method/resource locations.
+Links work within this checkout. If installing a skill elsewhere, preserve accessible linked resources or replace relative paths with configured private locations. The [artifact guide](supporting-artifacts.md) and [blank pack](../templates/supporting-artifacts.md) define inputs without requiring a particular vendor for private files.
 
-No candidate-specific weights are required. The evaluation sample uses Strong / Partial / Gap / Unknown with evidence; see the [fictional assessment](worked-example.md). If you choose numeric scoring privately, define its meaning and handle unknowns explicitly instead of inventing a universal threshold.
+A smaller installation can keep research and networking in its coordinator and use separate evaluation, tailoring and QA methods. The six public modules describe reusable responsibilities, not six proven personal installations. See [capability boundaries](capabilities-and-validation.md).
+
+## Run an application workflow
+
+Evaluate or load the existing assessment → reuse/request company research → map requirements to evidence → tailor → review the exact draft against raw sources → save checkpoint → human review. Networking is optional and requested separately. Stop after any named stage. A change to text/evidence reopens affected QA; saved state permits continuation across chats.
+
+The [offline replay](../examples/fictional-case/README.md#replay-with-an-assistant-without-accounts) gives an explicit prompt and expected behaviors. Match facts, decisions and limits, not identical wording. The QA pass is separate from tailoring reasoning; independent human review remains valuable.

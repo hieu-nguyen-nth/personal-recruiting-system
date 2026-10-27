@@ -1,14 +1,40 @@
 ---
 name: research-company
-description: Research a company at basic or deep depth, or save a sourced insight on its existing company page; connect findings to role preparation without inventing hiring criteria.
+description: Create a basic or deep company brief, or capture one sourced insight; separate official criteria from inference and turn findings into preparation questions.
 ---
 
-# Research a company — generic sample
+# Research a company — reference implementation
 
-Reuse the company page and its linked jobs. Confirm the entity and relevant business/team; company-wide evidence does not prove a specific internship assignment. Read prior insights before adding another report. Research depth follows the user's request or configured priority rule, not an agent's unsupported preference.
+Read the company page, prior findings, linked roles and requested depth. Confirm entity and relevant business/team before reusing sources. Work can start without an open job. Depth follows the user or an explicit priority rule, not agent enthusiasm.
 
-Basic research covers products/customers, business direction, relevant role context and practical questions. Deep research adds recent primary-source product/business evidence, team-specific work, official criteria vs inferred selection signals, supported candidate implications and questions that change preparation. Use accessible official materials first; label research scope when sources or dedicated research tools are unavailable.
+## Deliverable
 
-For each decision-relevant finding retain observation date, source/publication date, fact, interpretation, uncertainty and recruiting implication. Do not fill gaps with invented revenue, team assignments, interview scorecards or referral policies. Save a single insight into its existing section rather than generating an entire new report.
+| Mode | Useful result | Stopping point |
+|---|---|---|
+| One insight | Dated fact, source, interpretation and implication | Update the existing relevant section |
+| Basic | Products/customers, direction, role relevance and questions | Enough context for a first decision/conversation |
+| Deep | Basic plus recent primary evidence, team signals, official versus inferred criteria and preparation implications | Key questions answered or limits explicit; more sources would not change the advice |
 
-Use the [company template](../../templates/company-page.md). Preserve earlier notes and explicitly supersede outdated claims. Update the review date only for work actually reviewed. Link relevant Jobs/People; conversation history stays on the person's page. Personal priorities remain user-controlled. Candidate positioning and private research details stay outside the shared repository.
+## Research and reasoning
+
+Start with the exact JD and relevant official product, company, investor or engineering material. A professional profile may establish a person's role, not an employer's hiring rubric. A search snippet is a lead, not a full-source review.
+
+For each finding retain:
+
+```text
+Source ID + URL / publication date / observation date:
+Fact: what the source directly establishes
+Interpretation: inference, confidence and plausible alternative
+Implication: preparation, evidence choice or question that changes
+Unknown: what this source cannot establish
+```
+
+Prefer decision-relevant findings to a long news list. Cross-check conflicts and explicitly supersede outdated claims while preserving user notes. Inaccessible sources limit the result; do not invent quotes or claim live verification.
+
+## Recruiting implications
+
+Label exact JD criteria Official for this role. Label plausible team/company preferences Inferred. Company-wide announcements do not establish an internship assignment or interview scorecard. Candidate implications must reference real evidence, not manufacture industry expertise.
+
+Save to the existing [company-page structure](../../templates/company-page.md), link relevant jobs, and keep priority user-controlled. Update Last reviewed only for work actually reviewed. Tailoring and people discovery remain separate requested steps.
+
+The [fictional source pack](../../examples/fictional-case/inputs/company-source-excerpts.md) describes assisted intake. The [example brief](../../examples/fictional-case/outputs/company-brief.md) infers exception handling may be a useful discovery topic while leaving interview criteria unknown. All case sources are synthetic, not researched real-company evidence.

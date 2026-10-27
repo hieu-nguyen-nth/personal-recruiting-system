@@ -77,3 +77,7 @@ Use **Needs evaluation** for active unreviewed/Needs info/Error jobs; **Consider
 5. Read back all mapped assignments and unaffected statuses/notes/dates. Check two different jobs opening the same company page, the company's reverse Jobs list, a person's company links and unchanged conversation toggles. Inspect the real relation limits and views.
 
 These steps describe the target setup, not an instruction to run unverified connector-specific DDL. Use the chosen connector's documented capabilities or the Notion UI after inspecting the live schema. See the [build prompt](../prompts/build-your-workspace.md).
+
+## Inspect the fictional records
+
+The [case checkpoint](../examples/fictional-case/README.md#continuation-checkpoint), [role assessments](../examples/fictional-case/outputs/job-evaluation.md), [company page](../examples/fictional-case/outputs/company-brief.md) and [People page](../examples/fictional-case/outputs/people-page.md) show this model with invented records. One company owns two distinct openings; both hypothetical conversations remain inside one People page. These Markdown fixtures do not create Notion databases.
