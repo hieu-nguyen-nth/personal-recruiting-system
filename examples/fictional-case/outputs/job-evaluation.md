@@ -4,7 +4,7 @@ Scenario review: 2029-02-02. Sources: [JD-A-v1 / JD-B-v1](../inputs/job-descript
 
 ## Record identity
 
-One Company record: Kestrel Exhibit Systems. Jobs EX-KES-41 and EX-KES-42 both relate to that page. FIX-M01 is a mirror of EX-KES-41 and is skipped as a new row. Preserve its source reference on the existing opening if useful. No duplicate Company property or Interaction database is created.
+One Company record: Kestrel Exhibit Systems. Jobs EX-KES-41 and EX-KES-42 both relate to that page. FIX-M01 is a mirror of EX-KES-41 and is skipped as a new row. Preserve its source reference on the existing opening if useful. Job evaluation creates no duplicate Company property or event record; event-level capture is a separate request.
 
 ## EX-KES-41 — full evaluation
 

@@ -49,6 +49,10 @@ Document/PDF checks: Not assessed; no application submitted
 
 A continuation request should read this checkpoint and `draft-r3`, address the open question or requested edit, then recheck affected claims. It should not restart discovery, change priority, or regenerate company research without a reason.
 
+## Event-level extension
+
+The [fictional event](outputs/event-page.md) demonstrates general insights in an Events page, linked to the existing company/person. It occurs after the two simulated scans; their job/company counts stay unchanged. No real attendance or contact is asserted.
+
 ## Data model represented here
 
-One Company → Jobs EX-KES-41 and EX-KES-42. One People page → two dated conversation toggles. Insights remain sections of the Company page. Source IDs and story IDs are document references, not additional databases or mandatory Notion ID columns. See the [canonical schema](../../docs/database-schema.md).
+One Company → Jobs EX-KES-41 and EX-KES-42. One People page → two dated conversation toggles. Insights remain sections of the Company page. Events links many-to-many with Companies and People; it holds shared insights, while personal conversations remain in People toggles. Source IDs and story IDs are document references, not additional databases or mandatory Notion ID columns. See the [canonical schema](../../docs/database-schema.md).

@@ -12,3 +12,5 @@ Read the [candidate evidence](../examples/fictional-case/inputs/candidate-eviden
 6. [Scan digest](../examples/fictional-case/outputs/scan-digest.md): two bounded simulated runs, cursor continuation, duplicate skip and expected failure behavior.
 
 The case README includes prompts to replay individual methods and a saved continuation checkpoint. Outputs are authored reference answers; no real sources, records, messages, applications or scheduler runs are created.
+
+The [event extension](../examples/fictional-case/outputs/event-page.md) shows general event insights linked to a company and a speaker without replacing personal conversation history.

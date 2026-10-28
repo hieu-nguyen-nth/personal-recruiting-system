@@ -6,6 +6,7 @@ Do not commit the completed version. Store credentials only in the provider's su
 |---|---|
 | Jobs destination and field mapping | Your database/data source and active statuses |
 | Companies destination | Your database/data source |
+| Events destination | Event-level tracker; Companies/People relation mappings; table/calendar views; page body for general insights |
 | People destination | Existing People tracker, company relations and dated conversation-toggle format |
 | Job search scope | Role, location, timing and constraints you choose |
 | Private playbook | Goals, industry/function preferences and evaluation decisions; keep personal targeting rules private |

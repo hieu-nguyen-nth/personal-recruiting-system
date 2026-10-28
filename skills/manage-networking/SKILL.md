@@ -29,7 +29,7 @@ Match identity before updating. Compare checked facts with older fields, recordi
 
 Use the user's account or conversation evidence. Append a native dated toggle in the existing People page with date/channel/topic, substance, agreements and a due date only when agreed. Use the connector's supported block format; the [template](../../templates/person-page.md) is a readable representation, not an API payload.
 
-On retry, find the same event and correct it rather than append a duplicate. Current next action/date live in People properties for sorting; older commitments remain in their toggles. Keep unsent text under Draft. Sent, Replied and Met need actual event evidence. No separate Interaction database is needed.
+On retry, find the same event and correct it rather than append a duplicate. Current next action/date live in People properties for sorting; older commitments remain in their toggles. Keep unsent text under Draft. Sent, Replied and Met need actual event evidence. Individual conversations remain in People toggles. Event-level interactions use Events, with shared insights and multi-page Companies/People links; they do not replace personal history.
 
 ## Output and example
 

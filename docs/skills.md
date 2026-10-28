@@ -21,6 +21,6 @@ A compact installation can use coordination, evaluation, Company Intelligence, t
 
 ## Run an application workflow
 
-Evaluate or load the existing assessment → reuse/request company research → map requirements to evidence → tailor → review the exact draft against raw sources → save checkpoint → human review. Networking is optional and requested separately. Stop after any named stage. A change to text/evidence reopens affected QA; saved state permits continuation across chats.
+Evaluate or load the existing assessment → reuse/request company research → map requirements to evidence → tailor → review the exact draft against raw sources → save checkpoint → human review. Networking and event logging are requested separately. Event-wide notes go in Events; personal conversations remain in People toggles. Stop after any named stage. A change to text/evidence reopens affected QA; saved state permits continuation across chats.
 
 The [offline replay](../examples/fictional-case/README.md#replay-with-an-assistant-without-accounts) gives an explicit prompt and expected behaviors. Match facts, decisions and limits, not identical wording. The QA pass is separate from tailoring reasoning; independent human review remains valuable.

@@ -20,6 +20,6 @@ Use one stable date section for the configured reporting timezone. On retry, upd
 
 Quick screening followed by full evaluation is one opening with a full final disposition, not two evaluated jobs. An evaluated role can retain an unresolved eligibility action without remaining an unevaluated backlog item. Verify changed records and the digest by readback before reporting successful persistence.
 
-No resume generation, deep research, people discovery, outreach, referrals, submissions, master-evidence edits or document/PDF work occurs in this default scan. Those are separate requests. Configure notification behavior through the scheduler's supported settings; useful outcomes are worthwhile new roles, time-sensitive actions, failures or input required.
+No resume generation, deep research, people discovery, event logging, outreach, referrals, submissions, master-evidence edits or document/PDF work occurs in this default scan. Those are separate requests. Configure notification behavior through the scheduler's supported settings; useful outcomes are worthwhile new roles, time-sensitive actions, failures or input required.
 
 The [two-run fixture](../examples/fictional-case/outputs/scan-digest.md) illustrates cursor continuation and expected retry/failure behavior without pretending to be execution evidence. See [scheduling](scheduling.md) to create and verify an actual task.

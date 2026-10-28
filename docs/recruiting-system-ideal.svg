@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1250" viewBox="0 0 1200 1250" role="img" aria-labelledby="title desc">
-<title id="title">Ideal system · reference architecture</title><desc id="desc">Generic target architecture: a verified scheduled runtime or a user request enters a coordinator that routes five specialist methods. Jobs, Companies and People hold operational records. Private evidence supports research, networking, tailoring and independent QA. Configured document tools produce checked application files; humans approve, contact and submit. This is a design, not an availability or deployment claim.</desc>
+<title id="title">Ideal system · reference architecture</title><desc id="desc">Generic target architecture: a verified scheduled runtime or a user request enters a coordinator that routes five specialist methods. Jobs, Companies, People and Events hold operational records. Private evidence supports research, networking, tailoring and independent QA. Configured document tools produce checked application files; humans approve, contact and submit. This is a design, not an availability or deployment claim.</desc>
 <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0L7 4L0 8" fill="#7b8ba2"/></marker></defs>
 <rect x="0" y="0" width="1200" height="1250" rx="0" fill="#f8fafc" stroke="#f8fafc" stroke-width="1.5"/>
 <text x="48" y="58" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" text-anchor="start">Ideal system · reference architecture</text>
@@ -38,8 +38,8 @@
 <path d="M459 603 L459 625" fill="none" stroke="#7b8ba2" stroke-width="2" stroke-linejoin="round"/>
 <rect x="612" y="428" width="258" height="175" rx="14" fill="#eee9fa" stroke="#c5cfde" stroke-width="1.5"/>
 <text x="741" y="465" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="middle">Networking</text>
-<text x="741" y="502" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">Find / refresh contacts</text>
-<text x="741" y="532" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">Log dated conversation notes</text>
+<text x="741" y="502" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">Contacts + event insights</text>
+<text x="741" y="532" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">Personal chats in People</text>
 <text x="741" y="578" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">manage-networking</text>
 <path d="M741 603 L741 625" fill="none" stroke="#7b8ba2" stroke-width="2" stroke-linejoin="round"/>
 <rect x="894" y="428" width="258" height="175" rx="14" fill="#eee9fa" stroke="#c5cfde" stroke-width="1.5"/>
@@ -56,19 +56,23 @@
 <path d="M978 690 L978 666" fill="none" stroke="#7b8ba2" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <rect x="48" y="690" width="730" height="234" rx="14" fill="#ffffff" stroke="#c5cfde" stroke-width="1.5"/>
 <text x="72" y="729" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" text-anchor="start">Recruiting HQ in Notion</text>
-<rect x="68" y="750" width="212" height="113" rx="10" fill="#f1f5f9" stroke="#c5cfde" stroke-width="1.5"/>
-<text x="174" y="783" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="middle">Jobs</text>
-<text x="174" y="816" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">JDs + evaluations</text>
-<text x="174" y="842" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Preparation progress</text>
-<rect x="307" y="750" width="212" height="113" rx="10" fill="#f1f5f9" stroke="#c5cfde" stroke-width="1.5"/>
-<text x="413" y="783" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="middle">Companies</text>
-<text x="413" y="816" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Briefs + dated insights</text>
-<text x="413" y="842" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">One company, many jobs</text>
-<rect x="546" y="750" width="212" height="113" rx="10" fill="#f1f5f9" stroke="#c5cfde" stroke-width="1.5"/>
-<text x="652" y="783" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="middle">People</text>
-<text x="652" y="816" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Profile + next action</text>
-<text x="652" y="842" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Chat toggles inside</text>
-<text x="72" y="898" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">Three databases · insights and conversations live in page bodies</text>
+<rect x="68" y="750" width="168" height="113" rx="10" fill="#f1f5f9" stroke="#c5cfde" stroke-width="1.5"/>
+<text x="152" y="783" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle">Jobs</text>
+<text x="152" y="816" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle">JDs + evaluations</text>
+<text x="152" y="842" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Preparation progress</text>
+<rect x="242" y="750" width="168" height="113" rx="10" fill="#f1f5f9" stroke="#c5cfde" stroke-width="1.5"/>
+<text x="326" y="783" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle">Companies</text>
+<text x="326" y="816" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Briefs + insights</text>
+<text x="326" y="842" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Many jobs per company</text>
+<rect x="416" y="750" width="168" height="113" rx="10" fill="#f1f5f9" stroke="#c5cfde" stroke-width="1.5"/>
+<text x="500" y="783" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle">People</text>
+<text x="500" y="816" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Profile + next action</text>
+<text x="500" y="842" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Personal chat toggles</text>
+<rect x="590" y="750" width="168" height="113" rx="10" fill="#f1f5f9" stroke="#c5cfde" stroke-width="1.5"/>
+<text x="674" y="783" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle">Events</text>
+<text x="674" y="816" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle">General insights</text>
+<text x="674" y="842" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Company / people links</text>
+<text x="72" y="898" fill="#46566d" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start">Four databases · shared event insights; personal conversations stay in People</text>
 <rect x="804" y="690" width="348" height="234" rx="14" fill="#ffffff" stroke="#c5cfde" stroke-width="1.5"/>
 <text x="978" y="729" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" text-anchor="middle">Private evidence</text>
 <text x="978" y="771" fill="#172338" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle">Master resume · story bank</text>

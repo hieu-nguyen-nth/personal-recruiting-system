@@ -21,6 +21,7 @@ No new plugin is needed to organize this request. The skills define the methods;
 | Research this company, Quick/Standard/Deep | Company name/page, optional depth; no JD/resume required | Executive brief, six-section company profile, dated sources and knowledge gaps |
 | Save this insight | Finding and source | Dated update on the existing company page |
 | Find people / refresh this contact | Company/person and your connection preferences | Sourced identity/connection evidence, uncertainties and suggested next step |
+| Log an event / event insights | Event name/date or link, notes and known participants | One Events page with general insights, Companies/People links and sources |
 | Log this conversation | Actual notes and person | Dated toggle on the existing People page and current follow-up properties |
 | Resume from the saved step | Job page | The next unfinished preparation step, respecting the requested stopping point |
 
@@ -35,3 +36,9 @@ For scheduled discovery, use the selected local or cloud scheduler and verify it
 > Refresh the existing company page using this article. Update only affected sections and the current synthesis, preserve earlier notes, and leave untouched sections' review dates unchanged.
 
 Quick/Basic, Standard and Deep are effort levels, not promises of a particular tool. Research-only requests may return in chat; add “save to the existing company page” when persistence is desired.
+
+## Event request
+
+> Log this event and my notes. Link the companies and people I name, keep general insights on the event page and suggest follow-ups without sending anything. Keep individual conversation history in People.
+
+Use the [event template](../templates/event-page.md) or inspect the [fictional event](../examples/fictional-case/outputs/event-page.md). An unknown company/person does not block saving a general event insight.

@@ -37,3 +37,5 @@ For each update: source URL/title; publication/event and observation dates; Fact
 ## Links and open questions
 
 Reuse related Jobs and People. Conversations stay inside the People page. Keep business knowledge distinct from candidate fit, resume mapping and networking searches. See the [completed synthetic profile](../examples/fictional-case/outputs/company-brief.md) and [framework](../skills/research-company/references/company-framework.md).
+
+Related Events can supply attributed event findings. Reuse only when requested, retaining date/speaker/context and uncertainty. A panel remark or company association is not automatically official company policy.
