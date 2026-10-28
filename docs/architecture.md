@@ -38,3 +38,7 @@ A tool failure leaves its dependent step incomplete. A stored JD read is not a f
 ## Inspect implementation decisions
 
 Read the [decision/tradeoff log](design-decisions.md) for why these components exist, the [case](../examples/fictional-case/README.md) for inspectable handoffs, and [capability boundaries](capabilities-and-validation.md) for the distinction between authored outputs, private integration experience and optional target features. The [maintained scan procedure](scan-procedure.md) keeps detailed behavior out of the trigger prompt.
+
+## Relation cardinality
+
+Companies → Jobs is one-to-many, with exactly one Company for each identified JD. Companies ↔ People, Companies ↔ Events and People ↔ Events are many-to-many. Existing People.Company remains multi-page despite its singular field name. Reciprocal links use the same relation pair rather than duplicate text fields. Check stored links separately from native limit settings; the [schema](database-schema.md#verify-the-contract-without-overstating-enforcement) defines validation and connector limitations.

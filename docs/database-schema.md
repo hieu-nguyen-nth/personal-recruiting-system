@@ -8,8 +8,8 @@ This is the single reference for fields, relations, page content and setup check
 erDiagram
     COMPANIES ||--o{ JOBS : "has openings"
     COMPANIES }o--o{ PEOPLE : "professional associations"
-    EVENTS }o--o{ COMPANIES : "involves"
-    EVENTS }o--o{ PEOPLE : "relevant participants"
+    COMPANIES }o--o{ EVENTS : "participates in"
+    PEOPLE }o--o{ EVENTS : "relevant participants"
 
     COMPANIES {
         title Name
@@ -53,23 +53,31 @@ erDiagram
     }
 ```
 
-**One company → many jobs.** A verified opening belongs to one company. An unresolved inbox item may temporarily have an empty Company field; resolve it before treating its identity as established. The diagram describes the intended model, not a claim that every live workspace enforces required fields. Native Notion page identities need no extra ID column.
+**JD means a Jobs record**, not a separate database. **One company → many jobs.** A verified opening belongs to one company. An unresolved inbox item may temporarily have an empty Company field; resolve it before treating its identity as established. The diagram describes the intended model, not a claim that every live workspace enforces required fields. Native Notion page identities need no extra ID column.
 
-| Relation | Reverse property | Configuration |
-|---|---|---|
-| Jobs.Company → Companies | Companies.Jobs | Limit Jobs.Company to **1 page**; Companies.Jobs has **No limit**. Many distinct openings point to the same company page. |
-| People.Company → Companies | Companies.People | Preserve multiple known professional associations; both sides may have many pages. One person still has one People record. |
-| Events.Companies → Companies | Companies.Events | Both sides allow multiple pages; an event may involve several companies. |
-| Events.People → People | People.Events | Both sides allow multiple pages; a speaker/attendee link does not establish a personal conversation. |
+| Entities | Cardinality | Reciprocal properties | Native limit settings |
+|---|---|---|---|
+| Company ↔ JD | One company to many JDs; each identified JD has exactly one company | Companies.Jobs ↔ Jobs.Company | Companies.Jobs: No limit; Jobs.Company: 1 page |
+| Company ↔ Person | Many-to-many | Companies.People ↔ People.Company | No limit on both sides |
+| Company ↔ Event | Many-to-many | Companies.Events ↔ Events.Companies | No limit on both sides |
+| Person ↔ Event | Many-to-many | People.Events ↔ Events.People | No limit on both sides |
 
 Enable the corresponding reverse property and reuse it if already present. Notion supports two-way relations and a `1 page` / `No limit` setting. Verify the actual setting; a textual schema is not proof it has been applied. [Official relation documentation](https://www.notion.com/help/relations-and-rollups).
+
+## Verify the contract without overstating enforcement
+
+Inspect targets and reciprocal properties for all four pairs above. Read complete saved views (including pagination), verify every stored reference has its matching reverse, and check each saved identified Job has exactly one Company. Preserve multiple Company associations on People and multiple Companies/People on Events. A link to an event must not overwrite a person's existing company associations.
+
+The standard connector schema may omit native `1 page` / `No limit` settings and may not offer a supported setter. In that environment, report those UI flags as unverified; matching data is not proof of a configured limit. Inspect/set the properties in Notion's native editor using the table above. Do not claim a limit was changed through a tool that cannot expose it. The [official relation guide](https://www.notion.com/help/relations-and-rollups) explains these settings.
+
+Agent writes must validate the final Jobs.Company array contains exactly one page; on an ambiguous multi-company JD, stop the affected write rather than truncating links. Preserve arrays on all other relation sides. After a write, read back both ends. These guards do not claim to prevent every manual/API edit in the workspace. Event relations may be empty while the event still has useful general insights. No direct JD–People or JD–Event relation is required by this model.
 
 ## Fields and page content
 
 | Database | Minimum properties | Page body |
 |---|---|---|
 | Jobs | Existing role title, Company relation, JD link, application status and notes; evaluation state/date, next action/date, resume link if needed | Source/canonical identity; assessment with evidence and unknowns; last completed preparation step, requested stopping point, next step and exact draft version |
-| Companies | Name, website, user priority, research depth, last reviewed; reciprocal Jobs and People | Executive intelligence brief; six-section company profile; dated sourced insights; role/team criteria; open questions. See [company template](../templates/company-page.md). |
+| Companies | Name, website, user priority, research depth, last reviewed; reciprocal Jobs, People and Events | Executive intelligence brief; six-section company profile; dated sourced insights; role/team criteria; open questions. See [company template](../templates/company-page.md). |
 | People | Existing name, Company relation, profile/contact channel, relationship stage and notes; current role, last checked, next action/date if needed; reciprocal Events | Identity/source notes plus one dated toggle per actual conversation or outreach event. See [person template](../templates/person-page.md). |
 | Events | Event title, Date, Type, Companies relation, People relation, Event Link | Overview, general insights, participant/company context, follow-ups and raw notes/sources. See [event template](../templates/event-page.md). |
 

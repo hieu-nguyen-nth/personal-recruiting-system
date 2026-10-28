@@ -23,3 +23,5 @@ Action, owner and date only when established; label suggestions. Keep current pe
 Preserve notes, agenda, slides, recording or public links. Retain event date, speaker/context and uncertainty when a finding is reused in a company brief. A speaker's view is not automatically employer policy.
 
 See the [fictional event](../examples/fictional-case/outputs/event-page.md). This is a copyable page structure, not a claim that a native Notion default database template is installed.
+
+Companies and People are many-to-many relations with reciprocal Events properties. Linking a person does not replace that person's own Company associations. See the [canonical cardinality table](../docs/database-schema.md#relations).
